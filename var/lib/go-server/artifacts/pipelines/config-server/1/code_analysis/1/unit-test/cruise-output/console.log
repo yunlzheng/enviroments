@@ -1,0 +1,96 @@
+02:47:16.791 [go] Job Started: 2015-10-30 02:47:16 UTC
+
+02:47:16.792 [go] Start to prepare config-server/1/code_analysis/1/unit-test on 83f0e57b3635 [/var/lib/go-agent]
+02:47:16.805 [go] Start to update materials.
+
+02:47:16.808 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+02:47:16.822 STDERR: Cloning into '/var/lib/go-agent/pipelines/config-server'...
+02:47:17.846 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.129' to the list of known hosts.
+02:51:25.891 STDERR: Checking out files:  49% (8194/16717)   
+02:51:25.921 STDERR: Checking out files:  50% (8359/16717)   
+02:51:25.933 STDERR: Checking out files:  51% (8526/16717)   
+02:51:25.945 STDERR: Checking out files:  52% (8693/16717)   
+02:51:25.959 STDERR: Checking out files:  53% (8861/16717)   
+02:51:25.978 STDERR: Checking out files:  54% (9028/16717)   
+02:51:25.988 STDERR: Checking out files:  55% (9195/16717)   
+02:51:25.997 STDERR: Checking out files:  56% (9362/16717)   
+02:51:26.007 STDERR: Checking out files:  57% (9529/16717)   
+02:51:26.018 STDERR: Checking out files:  58% (9696/16717)   
+02:51:26.028 STDERR: Checking out files:  59% (9864/16717)   
+02:51:26.039 STDERR: Checking out files:  60% (10031/16717)   
+02:51:26.050 STDERR: Checking out files:  61% (10198/16717)   
+02:51:26.062 STDERR: Checking out files:  62% (10365/16717)   
+02:51:26.071 STDERR: Checking out files:  63% (10532/16717)   
+02:51:26.081 STDERR: Checking out files:  64% (10699/16717)   
+02:51:26.106 STDERR: Checking out files:  65% (10867/16717)   
+02:51:26.120 STDERR: Checking out files:  66% (11034/16717)   
+02:51:26.129 STDERR: Checking out files:  67% (11201/16717)   
+02:51:26.140 STDERR: Checking out files:  68% (11368/16717)   
+02:51:26.149 STDERR: Checking out files:  69% (11535/16717)   
+02:51:26.158 STDERR: Checking out files:  70% (11702/16717)   
+02:51:26.167 STDERR: Checking out files:  71% (11870/16717)   
+02:51:26.176 STDERR: Checking out files:  72% (12037/16717)   
+02:51:26.187 STDERR: Checking out files:  73% (12204/16717)   
+02:51:26.198 STDERR: Checking out files:  74% (12371/16717)   
+02:51:26.210 STDERR: Checking out files:  75% (12538/16717)   
+02:51:26.225 STDERR: Checking out files:  76% (12705/16717)   
+02:51:26.238 STDERR: Checking out files:  77% (12873/16717)   
+02:51:26.345 STDERR: Checking out files:  78% (13040/16717)   
+02:51:26.358 STDERR: Checking out files:  79% (13207/16717)   
+02:51:26.398 STDERR: Checking out files:  80% (13374/16717)   
+02:51:26.520 STDERR: Checking out files:  81% (13541/16717)   
+02:51:26.535 STDERR: Checking out files:  82% (13708/16717)   
+02:51:26.547 STDERR: Checking out files:  83% (13876/16717)   
+02:51:26.562 STDERR: Checking out files:  84% (14043/16717)   
+02:51:26.575 STDERR: Checking out files:  85% (14210/16717)   
+02:51:26.589 STDERR: Checking out files:  86% (14377/16717)   
+02:51:26.602 STDERR: Checking out files:  87% (14544/16717)   
+02:51:26.614 STDERR: Checking out files:  88% (14711/16717)   
+02:51:26.629 STDERR: Checking out files:  89% (14879/16717)   
+02:51:26.655 STDERR: Checking out files:  90% (15046/16717)   
+02:51:26.689 STDERR: Checking out files:  91% (15213/16717)   
+02:51:26.702 STDERR: Checking out files:  92% (15380/16717)   
+02:51:26.716 STDERR: Checking out files:  93% (15547/16717)   
+02:51:26.744 STDERR: Checking out files:  94% (15714/16717)   
+02:51:26.755 STDERR: Checking out files:  95% (15882/16717)   
+02:51:26.766 STDERR: Checking out files:  96% (16049/16717)   
+02:51:26.792 STDERR: Checking out files:  97% (16216/16717)   
+02:51:26.808 STDERR: Checking out files:  98% (16383/16717)   
+02:51:26.823 STDERR: Checking out files:  99% (16550/16717)   
+02:51:26.842 STDERR: Checking out files: 100% (16717/16717)   
+02:51:26.842 STDERR: Checking out files: 100% (16717/16717), done.
+02:51:26.864 [GIT] Fetch and reset in working directory pipelines/config-server
+02:51:26.864 [GIT] Cleaning all unversioned files in working copy
+02:51:27.181 [GIT] Cleaning submodule configurations in .git/config
+02:51:27.283 [GIT] Fetching changes
+02:51:28.315 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
+02:51:30.399 [GIT] Performing git gc
+02:51:30.403 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+02:51:31.367 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+02:51:31.369 [GIT] Removing modified files in submodules
+02:51:31.599 [GIT] Cleaning all unversioned files in working copy
+02:51:31.903 [go] Done.
+
+02:51:31.922 [go] Start to build config-server/1/code_analysis/1/unit-test on 83f0e57b3635 [/var/lib/go-agent]
+02:51:31.923 [go] Current job status: passed.
+
+02:51:31.923 [go] Start to execute task: <exec command="echo" workingdir="gocd" >
+<arg>unit-test</arg>
+</exec>.
+02:51:31.927 [go] setting environment variable 'GO_SERVER_URL' to value 'https://goserver:8154/go/'
+02:51:31.928 [go] setting environment variable 'GO_TRIGGER_USER' to value 'changes'
+02:51:31.928 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'config-server'
+02:51:31.929 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '1'
+02:51:31.929 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '1'
+02:51:31.930 [go] setting environment variable 'GO_STAGE_NAME' to value 'code_analysis'
+02:51:31.930 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+02:51:31.931 [go] setting environment variable 'GO_JOB_NAME' to value 'unit-test'
+02:51:31.931 [go] setting environment variable 'GO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+02:51:31.932 [go] setting environment variable 'GO_TO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+02:51:31.932 [go] setting environment variable 'GO_FROM_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+02:51:31.937 unit-test
+02:51:32.086 [go] Current job status: passed.
+
+02:51:32.096 [go] Start to create properties config-server/1/code_analysis/1/unit-test on 83f0e57b3635 [/var/lib/go-agent]
+02:51:32.097 [go] Start to upload config-server/1/code_analysis/1/unit-test on 83f0e57b3635 [/var/lib/go-agent]
+02:51:32.445 [go] Job completed config-server/1/code_analysis/1/unit-test on 83f0e57b3635 [/var/lib/go-agent]

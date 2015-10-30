@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="75">
+  <server artifactsdir="artifacts" agentAutoRegisterKey="123456789abcdef" commandRepositoryLocation="default" serverId="ebdd2243-53fc-4e80-a219-53696b9109fb" />
+  <pipelines group="GoCD">
+    <pipeline name="gocd-root" isLocked="false">
+      <timer>0 15 * * * ?</timer>
+      <materials>
+        <git url="git@github.com:twconsultants/leanswdev.git" />
+        <pipeline pipelineName="config-server" stageName="code_analysis" materialName="config-server" />
+        <pipeline pipelineName="config-api" stageName="code_analysis" materialName="config-api" />
+      </materials>
+      <stage name="code_analysis">
+        <jobs>
+          <job name="checkstyle">
+            <tasks>
+              <exec command="echo">
+                <arg>checkstyle</arg>
+              </exec>
+            </tasks>
+          </job>
+          <job name="unit-test">
+            <tasks>
+              <exec command="echo">
+                <arg>unit-test</arg>
+                <runif status="passed" />
+              </exec>
+            </tasks>
+          </job>
+          <job name="sonar">
+            <tasks>
+              <exec command="echo">
+                <arg>sonar check</arg>
+                <runif status="passed" />
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+      <stage name="package">
+        <jobs>
+          <job name="package_dist">
+            <tasks>
+              <exec command="/bin/sh" workingdir="gocd">
+                <arg>./bn</arg>
+                <arg>clean</arg>
+                <arg>cruise:prepare</arg>
+                <arg>dist</arg>
+                <runif status="passed" />
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+      <stage name="acceptence">
+        <jobs>
+          <job name="prepare_test_env">
+            <tasks>
+              <exec command="echo">
+                <arg>prepare test env</arg>
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+      <stage name="deploy">
+        <jobs>
+          <job name="deploy_test">
+            <tasks>
+              <exec command="echo">
+                <arg>deploytest</arg>
+              </exec>
+            </tasks>
+          </job>
+          <job name="deploy_uat">
+            <tasks>
+              <exec command="echo">
+                <arg>deploy_uat</arg>
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
+    <pipeline name="config-server" template="gocd-module-build-pipline">
+      <materials>
+        <git url="git@github.com:twconsultants/leanswdev.git" />
+      </materials>
+    </pipeline>
+    <pipeline name="config-api">
+      <materials>
+        <git url="git@github.com:twconsultants/leanswdev.git" />
+      </materials>
+      <stage name="code_analysis">
+        <jobs>
+          <job name="unit-test">
+            <tasks>
+              <exec command="mvn" workingdir="gocd/config/config-api">
+                <arg>test</arg>
+                <runif status="passed" />
+              </exec>
+            </tasks>
+          </job>
+          <job name="sonar_analysis">
+            <tasks>
+              <exec command="mvn" workingdir="gocd/config/config-api">
+                <arg>sonar:sonar</arg>
+                <runif status="passed" />
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
+    <pipeline name="base">
+      <materials>
+        <git url="git@github.com:twconsultants/leanswdev.git" />
+      </materials>
+      <stage name="commit">
+        <jobs>
+          <job name="unit-test">
+            <tasks>
+              <exec command="mvn" workingdir="gocd/base">
+                <arg>clean</arg>
+                <arg>test</arg>
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
+  </pipelines>
+  <templates>
+    <pipeline name="gocd-module-build-pipline">
+      <stage name="code_analysis">
+        <jobs>
+          <job name="unit-test">
+            <tasks>
+              <exec command="mvn" workingdir="gocd/config/config-server">
+                <arg>clean test</arg>
+                <runif status="passed" />
+              </exec>
+            </tasks>
+          </job>
+          <job name="sonar-analysis">
+            <tasks>
+              <exec command="echo">
+                <arg>sonar:sonar</arg>
+                <runif status="passed" />
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
+  </templates>
+  <agents>
+    <agent hostname="ddec34acbac6" ipaddress="192.168.42.49" uuid="4b316ec5-cd3b-4cc4-8454-a98cda0edce1" />
+    <agent hostname="05f6957dbfe0" ipaddress="192.168.42.50" uuid="a5d6b96a-4ea5-4939-82d3-d362661edf2c" />
+    <agent hostname="83f0e57b3635" ipaddress="192.168.42.51" uuid="07238bd9-f97a-4ef8-9674-9a5ad030e6ac" />
+  </agents>
+</cruise>
+

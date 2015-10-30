@@ -1,0 +1,34 @@
+goserver:
+  image: gocd/gocd-server
+  volumes:
+    - /root/.m2/:/var/go/.m2/ 
+    - ./password/:/go/
+    - ./var/lib/go-server/artifacts:/var/lib/go-server/artifacts
+    - ./etc/go:/etc/go
+  ports:
+    - "8154:8154"
+    - "8153:8153"
+agent01:
+  image: daocloud.io/yunlong/gocd-agent-mvn
+  volumes:
+   - /root/.m2/:/var/go/.m2/
+  environment:
+   - GO_SERVER=goserver
+  links:
+   - goserver
+agent02:
+  image: daocloud.io/yunlong/gocd-agent-mvn
+  volumes:
+   - /root/.m2/:/var/go/.m2/
+  environment:
+   - GO_SERVER=goserver
+  links:
+   - goserver
+agent03:
+  image: daocloud.io/yunlong/gocd-agent-mvn
+  volumes:
+   - /root/.m2/:/var/go/.m2/
+  environment:
+   - GO_SERVER=goserver
+  links:
+   - goserver

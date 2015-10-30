@@ -1,0 +1,43 @@
+02:47:15.541 [go] Job Started: 2015-10-30 02:47:15 UTC
+
+02:47:15.542 [go] Start to prepare config-api/1/code_analysis/1/sonar_analysis on 05f6957dbfe0 [/var/lib/go-agent]
+02:47:15.556 [go] Start to update materials.
+
+02:47:15.559 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+02:47:15.570 STDERR: Cloning into '/var/lib/go-agent/pipelines/config-api'...
+02:47:16.766 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.129' to the list of known hosts.
+02:52:01.403 [GIT] Fetch and reset in working directory pipelines/config-api
+02:52:01.403 [GIT] Cleaning all unversioned files in working copy
+02:52:01.724 [GIT] Cleaning submodule configurations in .git/config
+02:52:01.826 [GIT] Fetching changes
+02:52:03.054 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
+02:52:05.074 [GIT] Performing git gc
+02:52:05.177 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+02:52:05.645 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+02:52:05.746 [GIT] Removing modified files in submodules
+02:52:05.883 [GIT] Cleaning all unversioned files in working copy
+02:52:06.088 [go] Done.
+
+02:52:06.107 [go] Start to build config-api/1/code_analysis/1/sonar_analysis on 05f6957dbfe0 [/var/lib/go-agent]
+02:52:06.108 [go] Current job status: passed.
+
+02:52:06.108 [go] Start to execute task: <exec command="echo" >
+<arg>sona</arg>
+</exec>.
+02:52:06.112 [go] setting environment variable 'GO_SERVER_URL' to value 'https://goserver:8154/go/'
+02:52:06.113 [go] setting environment variable 'GO_TRIGGER_USER' to value 'changes'
+02:52:06.113 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'config-api'
+02:52:06.114 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '1'
+02:52:06.114 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '1'
+02:52:06.115 [go] setting environment variable 'GO_STAGE_NAME' to value 'code_analysis'
+02:52:06.115 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+02:52:06.116 [go] setting environment variable 'GO_JOB_NAME' to value 'sonar_analysis'
+02:52:06.116 [go] setting environment variable 'GO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+02:52:06.117 [go] setting environment variable 'GO_TO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+02:52:06.117 [go] setting environment variable 'GO_FROM_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+02:52:08.298 sona
+02:52:08.449 [go] Current job status: passed.
+
+02:52:08.459 [go] Start to create properties config-api/1/code_analysis/1/sonar_analysis on 05f6957dbfe0 [/var/lib/go-agent]
+02:52:08.460 [go] Start to upload config-api/1/code_analysis/1/sonar_analysis on 05f6957dbfe0 [/var/lib/go-agent]
+02:52:08.567 [go] Job completed config-api/1/code_analysis/1/sonar_analysis on 05f6957dbfe0 [/var/lib/go-agent]

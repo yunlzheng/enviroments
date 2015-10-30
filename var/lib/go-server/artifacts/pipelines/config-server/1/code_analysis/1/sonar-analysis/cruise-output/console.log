@@ -1,0 +1,14 @@
+02:47:30.304 [go] Job Started: 2015-10-30 02:47:30 UTC
+
+02:47:30.305 [go] Start to prepare config-server/1/code_analysis/1/sonar-analysis on ddec34acbac6 [/var/lib/go-agent]
+02:47:30.329 [go] Start to update materials.
+
+02:47:30.329 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+02:47:30.343 STDERR: Cloning into '/var/lib/go-agent/pipelines/config-server'...
+02:47:31.766 STDERR: Host key verification failed.
+02:47:31.768 STDERR: fatal: Could not read from remote repository.
+02:47:31.768 STDERR: 
+02:47:31.768 STDERR: Please make sure you have the correct access rights
+02:47:31.768 STDERR: and the repository exists.
+02:47:31.868 Failed to run git clone command
+02:47:31.925 [go] Job completed config-server/1/code_analysis/1/sonar-analysis on ddec34acbac6 [/var/lib/go-agent]
