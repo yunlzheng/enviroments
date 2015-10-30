@@ -1,0 +1,75 @@
+06:01:54.309 [go] Job Started: 2015-10-30 06:01:54 UTC
+
+06:01:54.309 [go] Start to prepare test-utils/1/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]
+06:01:54.319 [go] Start to update materials.
+
+06:01:54.319 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+06:01:54.322 STDERR: Cloning into '/var/lib/go-agent/pipelines/test-utils'...
+06:01:55.766 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.128' to the list of known hosts.
+06:26:14.838 STDERR: Checking out files:  49% (8308/16717)   
+06:26:14.848 STDERR: Checking out files:  50% (8359/16717)   
+06:26:14.860 STDERR: Checking out files:  51% (8526/16717)   
+06:26:14.874 STDERR: Checking out files:  52% (8693/16717)   
+06:26:14.888 STDERR: Checking out files:  53% (8861/16717)   
+06:26:14.913 STDERR: Checking out files:  54% (9028/16717)   
+06:26:14.919 STDERR: Checking out files:  55% (9195/16717)   
+06:26:14.929 STDERR: Checking out files:  56% (9362/16717)   
+06:26:14.941 STDERR: Checking out files:  57% (9529/16717)   
+06:26:14.953 STDERR: Checking out files:  58% (9696/16717)   
+06:26:14.964 STDERR: Checking out files:  59% (9864/16717)   
+06:26:14.975 STDERR: Checking out files:  60% (10031/16717)   
+06:26:14.986 STDERR: Checking out files:  61% (10198/16717)   
+06:26:14.998 STDERR: Checking out files:  62% (10365/16717)   
+06:26:15.008 STDERR: Checking out files:  63% (10532/16717)   
+06:26:15.027 STDERR: Checking out files:  64% (10699/16717)   
+06:26:15.054 STDERR: Checking out files:  65% (10867/16717)   
+06:26:15.071 STDERR: Checking out files:  66% (11034/16717)   
+06:26:15.080 STDERR: Checking out files:  67% (11201/16717)   
+06:26:15.090 STDERR: Checking out files:  68% (11368/16717)   
+06:26:15.100 STDERR: Checking out files:  69% (11535/16717)   
+06:26:15.109 STDERR: Checking out files:  70% (11702/16717)   
+06:26:15.123 STDERR: Checking out files:  71% (11870/16717)   
+06:26:15.127 STDERR: Checking out files:  72% (12037/16717)   
+06:26:15.140 STDERR: Checking out files:  73% (12204/16717)   
+06:26:15.153 STDERR: Checking out files:  74% (12371/16717)   
+06:26:15.163 STDERR: Checking out files:  75% (12538/16717)   
+06:26:15.178 STDERR: Checking out files:  76% (12705/16717)   
+06:26:15.189 STDERR: Checking out files:  77% (12873/16717)   
+06:26:15.296 STDERR: Checking out files:  78% (13040/16717)   
+06:26:15.309 STDERR: Checking out files:  79% (13207/16717)   
+06:26:15.351 STDERR: Checking out files:  80% (13374/16717)   
+06:26:15.495 STDERR: Checking out files:  81% (13541/16717)   
+06:26:15.508 STDERR: Checking out files:  82% (13708/16717)   
+06:26:15.521 STDERR: Checking out files:  83% (13876/16717)   
+06:26:15.537 STDERR: Checking out files:  84% (14043/16717)   
+06:26:15.552 STDERR: Checking out files:  85% (14210/16717)   
+06:26:15.564 STDERR: Checking out files:  86% (14377/16717)   
+06:26:15.577 STDERR: Checking out files:  87% (14544/16717)   
+06:26:15.590 STDERR: Checking out files:  88% (14711/16717)   
+06:26:15.604 STDERR: Checking out files:  89% (14879/16717)   
+06:26:15.629 STDERR: Checking out files:  90% (15046/16717)   
+06:26:15.661 STDERR: Checking out files:  91% (15213/16717)   
+06:26:15.674 STDERR: Checking out files:  92% (15380/16717)   
+06:26:15.688 STDERR: Checking out files:  93% (15547/16717)   
+06:26:15.714 STDERR: Checking out files:  94% (15714/16717)   
+06:26:15.726 STDERR: Checking out files:  95% (15882/16717)   
+06:26:15.736 STDERR: Checking out files:  96% (16049/16717)   
+06:26:15.763 STDERR: Checking out files:  97% (16216/16717)   
+06:26:15.778 STDERR: Checking out files:  98% (16383/16717)   
+06:26:15.794 STDERR: Checking out files:  99% (16550/16717)   
+06:26:15.813 STDERR: Checking out files: 100% (16717/16717)   
+06:26:15.813 STDERR: Checking out files: 100% (16717/16717), done.
+06:26:15.836 [GIT] Fetch and reset in working directory pipelines/test-utils
+06:26:15.836 [GIT] Cleaning all unversioned files in working copy
+06:26:16.151 [GIT] Cleaning submodule configurations in .git/config
+06:26:16.253 [GIT] Fetching changes
+06:26:17.558 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.129' to the list of known hosts.
+06:26:19.970 [GIT] Performing git gc
+06:26:20.072 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+06:26:21.003 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+06:26:21.004 [GIT] Removing modified files in submodules
+06:26:21.087 [GIT] Cleaning all unversioned files in working copy
+06:26:21.294 [go] Done.
+
+06:26:21.300 [go] Job is cancelled test-utils/1/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]
+06:26:21.311 [go] Job completed test-utils/1/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]

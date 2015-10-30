@@ -1,0 +1,212 @@
+05:56:55.592 [go] Job Started: 2015-10-30 05:56:55 UTC
+
+05:56:55.592 [go] Start to prepare config-api/2/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]
+05:56:55.602 [go] Start to update materials.
+
+05:56:55.602 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+05:56:55.707 [GIT] Fetch and reset in working directory pipelines/config-api
+05:56:55.708 [GIT] Cleaning all unversioned files in working copy
+05:56:56.030 [GIT] Cleaning submodule configurations in .git/config
+05:56:56.133 [GIT] Fetching changes
+05:56:59.971 [GIT] Performing git gc
+05:57:00.073 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+05:57:00.243 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+05:57:00.245 [GIT] Removing modified files in submodules
+05:57:00.327 [GIT] Cleaning all unversioned files in working copy
+05:57:00.532 [go] Done.
+
+05:57:00.548 [go] Start to build config-api/2/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]
+05:57:00.548 [go] Current job status: passed.
+
+05:57:00.548 [go] Start to execute task: <exec command="mvn" workingdir="gocd/config/config-api" >
+<arg>test</arg>
+</exec>.
+05:57:00.549 [go] setting environment variable 'GO_SERVER_URL' to value 'https://goserver:8154/go/'
+05:57:00.549 [go] setting environment variable 'GO_TRIGGER_USER' to value 'anonymous'
+05:57:00.550 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'config-api'
+05:57:00.550 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '2'
+05:57:00.550 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '2'
+05:57:00.551 [go] setting environment variable 'GO_STAGE_NAME' to value 'code_analysis'
+05:57:00.551 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+05:57:00.551 [go] setting environment variable 'GO_JOB_NAME' to value 'unit-test'
+05:57:00.552 [go] setting environment variable 'GO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+05:57:00.552 [go] setting environment variable 'GO_TO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+05:57:00.553 [go] setting environment variable 'GO_FROM_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+05:57:02.823 [INFO] Scanning for projects...
+05:57:02.946 [INFO]                                                                         
+05:57:02.947 [INFO] ------------------------------------------------------------------------
+05:57:02.947 [INFO] Building config-api 15.2.0
+05:57:02.947 [INFO] ------------------------------------------------------------------------
+05:57:05.681 [INFO] 
+05:57:05.681 [INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ config-api ---
+05:57:06.281 [INFO] Using 'UTF-8' encoding to copy filtered resources.
+05:57:06.282 [INFO] skip non existing resourceDirectory /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/src/main/resources
+05:57:06.283 [INFO] 
+05:57:06.284 [INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ config-api ---
+05:57:07.645 [INFO] Nothing to compile - all classes are up to date
+05:57:07.646 [INFO] 
+05:57:07.646 [INFO] --- maven-resources-plugin:2.3:testResources (default-testResources) @ config-api ---
+05:57:07.659 [INFO] Using 'UTF-8' encoding to copy filtered resources.
+05:57:07.665 [INFO] Copying 1 resource
+05:57:07.671 [INFO] 
+05:57:07.672 [INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ config-api ---
+05:57:07.767 [INFO] Nothing to compile - all classes are up to date
+05:57:07.768 [INFO] 
+05:57:07.768 [INFO] --- maven-surefire-plugin:2.10:test (default-test) @ config-api ---
+05:57:08.247 [INFO] Surefire report directory: /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/target/surefire-reports
+05:57:08.432 
+05:57:08.436 -------------------------------------------------------
+05:57:08.436  T E S T S
+05:57:08.437 -------------------------------------------------------
+05:57:09.666 Running com.thoughtworks.go.domain.AbstractTaskTest
+05:57:10.468 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.803 sec
+05:57:10.488 Running com.thoughtworks.go.domain.scm.SCMsTest
+05:57:10.555 log4j:WARN No appenders could be found for logger (com.thoughtworks.go.security.CipherProvider).
+05:57:10.555 log4j:WARN Please initialize the log4j system properly.
+05:57:10.560 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec
+05:57:10.578 Running com.thoughtworks.go.domain.scm.SCMTest
+05:57:10.690 Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
+05:57:10.716 Running com.thoughtworks.go.domain.IpAddressTest
+05:57:10.727 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+05:57:10.737 Running com.thoughtworks.go.domain.CaseInsensitiveStringTest
+05:57:10.767 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+05:57:10.769 Running com.thoughtworks.go.domain.config.ArgsTest
+05:57:10.780 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+05:57:10.782 Running com.thoughtworks.go.domain.config.AdminsConfigTest
+05:57:10.808 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+05:57:10.810 Running com.thoughtworks.go.domain.GoConfigRevisionTest
+05:57:10.878 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+05:57:10.880 Running com.thoughtworks.go.config.PasswordFileConfigTest
+05:57:10.883 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+05:57:10.898 Running com.thoughtworks.go.config.OnCancelConfigTest
+05:57:10.906 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+05:57:10.907 Running com.thoughtworks.go.config.PipelineTemplateConfigTest
+05:57:11.051 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec
+05:57:11.054 Running com.thoughtworks.go.config.AdminRoleTest
+05:57:11.089 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+05:57:11.090 Running com.thoughtworks.go.config.GoConfigSchemaTest
+05:57:11.092 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+05:57:11.097 Running com.thoughtworks.go.config.SecurityConfigTest
+05:57:11.128 Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+05:57:11.130 Running com.thoughtworks.go.config.domain.VariableValueConfigTest
+05:57:11.132 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+05:57:11.133 Running com.thoughtworks.go.config.domain.EnvironmentVariablesConfigTest
+05:57:11.178 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+05:57:11.180 Running com.thoughtworks.go.config.pluggabletask.PluggableTaskTest
+05:57:11.223 Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+05:57:11.225 Running com.thoughtworks.go.config.BuildTaskTest
+05:57:11.352 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec
+05:57:11.354 Running com.thoughtworks.go.config.EnvironmentVariableConfigTest
+05:57:11.405 Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+05:57:11.406 Running com.thoughtworks.go.config.ValidationContextTest
+05:57:11.414 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+05:57:11.415 Running com.thoughtworks.go.config.parser.GoConfigFieldTypeConverterTest
+05:57:11.531 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
+05:57:11.533 Running com.thoughtworks.go.config.EnvironmentConfigTest
+05:57:11.560 Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+05:57:11.566 Running com.thoughtworks.go.config.AntTaskTest
+05:57:11.568 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+05:57:11.573 Running com.thoughtworks.go.config.TabTest
+05:57:11.574 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+05:57:11.578 Running com.thoughtworks.go.config.GoConfigGraphWalkerTest
+05:57:11.681 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+05:57:11.681 Running com.thoughtworks.go.config.ConfigContextTest
+05:57:11.681 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+05:57:11.688 Running com.thoughtworks.go.config.registry.ConfigElementImplementationRegistryTest
+05:57:11.900 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.215 sec
+05:57:11.914 Running com.thoughtworks.go.config.materials.AbstractMaterialConfigTest
+05:57:12.161 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.246 sec
+05:57:12.162 Running com.thoughtworks.go.config.materials.PackageMaterialConfigTest
+05:57:12.185 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+05:57:12.195 Running com.thoughtworks.go.config.materials.svn.SvnMaterialConfigTest
+05:57:12.206 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+05:57:12.208 Running com.thoughtworks.go.config.materials.PluggableSCMMaterialConfigTest
+05:57:12.225 Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+05:57:12.228 Running com.thoughtworks.go.config.materials.MaterialConfigsTest
+05:57:12.263 Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+05:57:12.266 Running com.thoughtworks.go.config.materials.git.GitMaterialConfigTest
+05:57:12.266 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+05:57:12.271 Running com.thoughtworks.go.config.materials.ScmMaterialConfigTest
+05:57:12.271 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+05:57:12.279 Running com.thoughtworks.go.config.materials.perforce.P4MaterialConfigTest
+05:57:12.283 Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
+05:57:12.290 Running com.thoughtworks.go.config.materials.mercurial.HgMaterialConfigTest
+05:57:12.291 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+05:57:12.313 Running com.thoughtworks.go.config.RoleTest
+05:57:12.313 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+05:57:12.331 Running com.thoughtworks.go.config.NantTaskTest
+05:57:12.337 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+05:57:12.361 Running com.thoughtworks.go.config.ServerConfigTest
+05:57:12.366 Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+05:57:12.385 Running com.thoughtworks.go.config.MailHostTest
+05:57:12.388 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+05:57:12.399 Running com.thoughtworks.go.config.validation.ArtifactDirValidatorTest
+05:57:12.400 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+05:57:12.410 Running com.thoughtworks.go.config.validation.CommandRepositoryLocationValidatorTest
+05:57:12.436 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+05:57:12.438 Running com.thoughtworks.go.config.validation.UniqueOnCancelValidatorTest
+05:57:12.758 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.317 sec
+05:57:12.758 Running com.thoughtworks.go.config.validation.NameTypeValidatorTest
+05:57:12.758 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+05:57:12.759 Running com.thoughtworks.go.config.validation.FilePathTypeValidatorTest
+05:57:12.767 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+05:57:12.767 Running com.thoughtworks.go.config.validation.TaskWorkingFolderValidatorTest
+05:57:12.773 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+05:57:12.773 Running com.thoughtworks.go.config.LdapConfigTest
+05:57:12.773 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+05:57:12.773 Running com.thoughtworks.go.config.TemplateExpansionPreprocessorTest
+05:57:12.783 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+05:57:12.787 Running com.thoughtworks.go.config.TemplatesConfigTest
+05:57:12.806 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+05:57:12.806 Running com.thoughtworks.go.config.PathFromAncestorTest
+05:57:12.808 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+05:57:12.809 Running com.thoughtworks.go.config.TabsTest
+05:57:12.810 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+05:57:12.811 Running com.thoughtworks.go.config.ExecTaskTest
+05:57:12.849 Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+05:57:12.849 Running com.thoughtworks.go.config.RunMultipleInstanceJobTypeConfigTest
+05:57:12.852 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+05:57:12.852 Running com.thoughtworks.go.config.preprocessor.ParamStateMachineTest
+05:57:12.863 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+05:57:12.864 Running com.thoughtworks.go.config.preprocessor.ParamResolverTest
+05:57:13.143 Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.278 sec
+05:57:13.144 Running com.thoughtworks.go.config.TimerConfigTest
+05:57:13.160 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+05:57:13.161 Running com.thoughtworks.go.config.GoConfigFieldTest
+05:57:13.224 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+05:57:13.225 Running com.thoughtworks.go.config.CruiseConfigClassTest
+05:57:13.230 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+05:57:13.231 Running com.thoughtworks.go.config.RakeTaskTest
+05:57:13.253 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+05:57:13.255 Running com.thoughtworks.go.security.GoCipherTest
+05:57:13.278 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+05:57:13.280 Running com.thoughtworks.go.util.ArtifactLogUtilTest
+05:57:13.288 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+05:57:13.289 Running com.thoughtworks.go.util.pool.DigestObjectPoolsTest
+05:57:13.330 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+05:57:13.331 Running com.thoughtworks.go.util.command.UrlArgumentTest
+05:57:13.343 Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+05:57:13.345 Running com.thoughtworks.go.util.command.EnvironmentVariableContextTest
+05:57:13.379 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+05:57:13.381 Running com.thoughtworks.go.util.CachedDigestUtilsTest
+05:57:13.527 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec
+05:57:13.528 Running com.thoughtworks.go.util.XpathUtilsTest
+05:57:13.684 [Fatal Error] :1:1: Content is not allowed in prolog.
+05:57:13.840 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.312 sec
+05:57:13.868 
+05:57:13.868 Results :
+05:57:13.868 
+05:57:13.868 Tests run: 466, Failures: 0, Errors: 0, Skipped: 1
+05:57:13.869 
+05:57:13.874 [INFO] ------------------------------------------------------------------------
+05:57:13.874 [INFO] BUILD SUCCESS
+05:57:13.874 [INFO] ------------------------------------------------------------------------
+05:57:13.874 [INFO] Total time: 11.082s
+05:57:13.874 [INFO] Finished at: Fri Oct 30 05:57:13 UTC 2015
+05:57:14.012 [INFO] Final Memory: 10M/205M
+05:57:14.012 [INFO] ------------------------------------------------------------------------
+05:57:14.052 [go] Current job status: passed.
+
+05:57:14.059 [go] Start to create properties config-api/2/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]
+05:57:14.059 [go] Start to upload config-api/2/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]
+05:57:14.279 [go] Job completed config-api/2/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]

@@ -1,0 +1,95 @@
+03:14:48.958 [go] Job Started: 2015-10-30 03:14:48 UTC
+
+03:14:48.958 [go] Start to prepare config-server/1/code_analysis/1/sonar-analysis on 9838e6db3656 [/var/lib/go-agent]
+03:14:48.972 [go] Start to update materials.
+
+03:14:48.972 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+03:14:48.993 STDERR: Cloning into '/var/lib/go-agent/pipelines/config-server'...
+03:16:08.228 STDERR: Checking out files:  49% (8242/16717)   
+03:16:08.257 STDERR: Checking out files:  50% (8359/16717)   
+03:16:08.269 STDERR: Checking out files:  51% (8526/16717)   
+03:16:08.281 STDERR: Checking out files:  52% (8693/16717)   
+03:16:08.296 STDERR: Checking out files:  53% (8861/16717)   
+03:16:08.315 STDERR: Checking out files:  54% (9028/16717)   
+03:16:08.326 STDERR: Checking out files:  55% (9195/16717)   
+03:16:08.336 STDERR: Checking out files:  56% (9362/16717)   
+03:16:08.346 STDERR: Checking out files:  57% (9529/16717)   
+03:16:08.359 STDERR: Checking out files:  58% (9696/16717)   
+03:16:08.369 STDERR: Checking out files:  59% (9864/16717)   
+03:16:08.380 STDERR: Checking out files:  60% (10031/16717)   
+03:16:08.391 STDERR: Checking out files:  61% (10198/16717)   
+03:16:08.403 STDERR: Checking out files:  62% (10365/16717)   
+03:16:08.413 STDERR: Checking out files:  63% (10532/16717)   
+03:16:08.422 STDERR: Checking out files:  64% (10699/16717)   
+03:16:08.450 STDERR: Checking out files:  65% (10867/16717)   
+03:16:08.465 STDERR: Checking out files:  66% (11034/16717)   
+03:16:08.475 STDERR: Checking out files:  67% (11201/16717)   
+03:16:08.485 STDERR: Checking out files:  68% (11368/16717)   
+03:16:08.495 STDERR: Checking out files:  69% (11535/16717)   
+03:16:08.505 STDERR: Checking out files:  70% (11702/16717)   
+03:16:08.515 STDERR: Checking out files:  71% (11870/16717)   
+03:16:08.525 STDERR: Checking out files:  72% (12037/16717)   
+03:16:08.537 STDERR: Checking out files:  73% (12204/16717)   
+03:16:08.548 STDERR: Checking out files:  74% (12371/16717)   
+03:16:08.559 STDERR: Checking out files:  75% (12538/16717)   
+03:16:08.575 STDERR: Checking out files:  76% (12705/16717)   
+03:16:08.586 STDERR: Checking out files:  77% (12873/16717)   
+03:16:08.699 STDERR: Checking out files:  78% (13040/16717)   
+03:16:08.712 STDERR: Checking out files:  79% (13207/16717)   
+03:16:08.754 STDERR: Checking out files:  80% (13374/16717)   
+03:16:08.872 STDERR: Checking out files:  81% (13541/16717)   
+03:16:08.886 STDERR: Checking out files:  82% (13708/16717)   
+03:16:08.898 STDERR: Checking out files:  83% (13876/16717)   
+03:16:08.913 STDERR: Checking out files:  84% (14043/16717)   
+03:16:08.928 STDERR: Checking out files:  85% (14210/16717)   
+03:16:08.940 STDERR: Checking out files:  86% (14377/16717)   
+03:16:08.954 STDERR: Checking out files:  87% (14544/16717)   
+03:16:08.967 STDERR: Checking out files:  88% (14711/16717)   
+03:16:08.984 STDERR: Checking out files:  89% (14879/16717)   
+03:16:09.010 STDERR: Checking out files:  90% (15046/16717)   
+03:16:09.043 STDERR: Checking out files:  91% (15213/16717)   
+03:16:09.059 STDERR: Checking out files:  92% (15380/16717)   
+03:16:09.072 STDERR: Checking out files:  93% (15547/16717)   
+03:16:09.099 STDERR: Checking out files:  94% (15714/16717)   
+03:16:09.113 STDERR: Checking out files:  95% (15882/16717)   
+03:16:09.130 STDERR: Checking out files:  96% (16049/16717)   
+03:16:09.155 STDERR: Checking out files:  97% (16216/16717)   
+03:16:09.228 STDERR: Checking out files:  97% (16371/16717)   
+03:16:09.230 STDERR: Checking out files:  98% (16383/16717)   
+03:16:09.247 STDERR: Checking out files:  99% (16550/16717)   
+03:16:09.266 STDERR: Checking out files: 100% (16717/16717)   
+03:16:09.266 STDERR: Checking out files: 100% (16717/16717), done.
+03:16:09.389 [GIT] Fetch and reset in working directory pipelines/config-server
+03:16:09.389 [GIT] Cleaning all unversioned files in working copy
+03:16:09.610 [GIT] Cleaning submodule configurations in .git/config
+03:16:09.712 [GIT] Fetching changes
+03:16:24.078 [GIT] Performing git gc
+03:16:24.180 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+03:16:24.727 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+03:16:24.729 [GIT] Removing modified files in submodules
+03:16:24.920 [GIT] Cleaning all unversioned files in working copy
+03:16:25.134 [go] Done.
+
+03:16:25.156 [go] Start to build config-server/1/code_analysis/1/sonar-analysis on 9838e6db3656 [/var/lib/go-agent]
+03:16:25.156 [go] Current job status: passed.
+
+03:16:25.156 [go] Start to execute task: <exec command="echo" >
+<arg>sonar:sonar</arg>
+</exec>.
+03:16:25.157 [go] setting environment variable 'GO_SERVER_URL' to value 'https://goserver:8154/go/'
+03:16:25.158 [go] setting environment variable 'GO_TRIGGER_USER' to value 'changes'
+03:16:25.159 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'config-server'
+03:16:25.159 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '1'
+03:16:25.159 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '1'
+03:16:25.160 [go] setting environment variable 'GO_STAGE_NAME' to value 'code_analysis'
+03:16:25.160 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+03:16:25.161 [go] setting environment variable 'GO_JOB_NAME' to value 'sonar-analysis'
+03:16:25.161 [go] setting environment variable 'GO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:16:25.162 [go] setting environment variable 'GO_TO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:16:25.162 [go] setting environment variable 'GO_FROM_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:16:25.249 sonar:sonar
+03:16:25.369 [go] Current job status: passed.
+
+03:16:25.378 [go] Start to create properties config-server/1/code_analysis/1/sonar-analysis on 9838e6db3656 [/var/lib/go-agent]
+03:16:25.379 [go] Start to upload config-server/1/code_analysis/1/sonar-analysis on 9838e6db3656 [/var/lib/go-agent]
+03:16:25.428 [go] Job completed config-server/1/code_analysis/1/sonar-analysis on 9838e6db3656 [/var/lib/go-agent]

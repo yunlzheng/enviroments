@@ -1,0 +1,20 @@
+05:57:16.708 [go] Job Started: 2015-10-30 05:57:16 UTC
+
+05:57:16.708 [go] Start to prepare config-server/2/code_analysis/1/sonar-analysis on 5b90ce094f1c [/var/lib/go-agent]
+05:57:16.722 [go] Start to update materials.
+
+05:57:16.722 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+05:57:16.725 STDERR: Cloning into '/var/lib/go-agent/pipelines/config-server'...
+06:14:18.090 [GIT] Fetch and reset in working directory pipelines/config-server
+06:14:18.090 [GIT] Cleaning all unversioned files in working copy
+06:14:18.413 [GIT] Cleaning submodule configurations in .git/config
+06:14:18.416 [GIT] Fetching changes
+06:14:22.868 [GIT] Performing git gc
+06:14:22.970 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+06:14:23.176 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+06:14:23.278 [GIT] Removing modified files in submodules
+06:14:23.449 [GIT] Cleaning all unversioned files in working copy
+06:14:23.657 [go] Done.
+
+06:14:23.664 [go] Job is cancelled config-server/2/code_analysis/1/sonar-analysis on 5b90ce094f1c [/var/lib/go-agent]
+06:14:23.730 [go] Job completed config-server/2/code_analysis/1/sonar-analysis on 5b90ce094f1c [/var/lib/go-agent]

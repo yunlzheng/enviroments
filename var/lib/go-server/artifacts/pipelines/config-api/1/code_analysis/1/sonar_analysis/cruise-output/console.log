@@ -1,0 +1,815 @@
+03:12:22.737 [go] Job Started: 2015-10-30 03:12:22 UTC
+
+03:12:22.738 [go] Start to prepare config-api/1/code_analysis/1/sonar_analysis on 5b90ce094f1c [/var/lib/go-agent]
+03:12:22.751 [go] Start to update materials.
+
+03:12:22.755 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+03:12:22.766 STDERR: Cloning into '/var/lib/go-agent/pipelines/config-api'...
+03:12:30.118 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.129' to the list of known hosts.
+03:16:16.999 STDERR: Checking out files:  48% (8104/16717)   
+03:16:17.006 STDERR: Checking out files:  49% (8192/16717)   
+03:16:17.038 STDERR: Checking out files:  50% (8359/16717)   
+03:16:17.050 STDERR: Checking out files:  51% (8526/16717)   
+03:16:17.063 STDERR: Checking out files:  52% (8693/16717)   
+03:16:17.079 STDERR: Checking out files:  53% (8861/16717)   
+03:16:17.098 STDERR: Checking out files:  54% (9028/16717)   
+03:16:17.109 STDERR: Checking out files:  55% (9195/16717)   
+03:16:17.119 STDERR: Checking out files:  56% (9362/16717)   
+03:16:17.131 STDERR: Checking out files:  57% (9529/16717)   
+03:16:17.143 STDERR: Checking out files:  58% (9696/16717)   
+03:16:17.153 STDERR: Checking out files:  59% (9864/16717)   
+03:16:17.166 STDERR: Checking out files:  60% (10031/16717)   
+03:16:17.178 STDERR: Checking out files:  61% (10198/16717)   
+03:16:17.190 STDERR: Checking out files:  62% (10365/16717)   
+03:16:17.200 STDERR: Checking out files:  63% (10532/16717)   
+03:16:17.210 STDERR: Checking out files:  64% (10699/16717)   
+03:16:17.240 STDERR: Checking out files:  65% (10867/16717)   
+03:16:17.254 STDERR: Checking out files:  66% (11034/16717)   
+03:16:17.263 STDERR: Checking out files:  67% (11201/16717)   
+03:16:17.274 STDERR: Checking out files:  68% (11368/16717)   
+03:16:17.285 STDERR: Checking out files:  69% (11535/16717)   
+03:16:17.294 STDERR: Checking out files:  70% (11702/16717)   
+03:16:17.304 STDERR: Checking out files:  71% (11870/16717)   
+03:16:17.312 STDERR: Checking out files:  72% (12037/16717)   
+03:16:17.325 STDERR: Checking out files:  73% (12204/16717)   
+03:16:17.340 STDERR: Checking out files:  74% (12371/16717)   
+03:16:17.351 STDERR: Checking out files:  75% (12538/16717)   
+03:16:17.365 STDERR: Checking out files:  76% (12705/16717)   
+03:16:17.377 STDERR: Checking out files:  77% (12873/16717)   
+03:16:17.481 STDERR: Checking out files:  78% (13040/16717)   
+03:16:17.494 STDERR: Checking out files:  79% (13207/16717)   
+03:16:17.555 STDERR: Checking out files:  80% (13374/16717)   
+03:16:17.670 STDERR: Checking out files:  81% (13541/16717)   
+03:16:17.683 STDERR: Checking out files:  82% (13708/16717)   
+03:16:17.697 STDERR: Checking out files:  83% (13876/16717)   
+03:16:17.712 STDERR: Checking out files:  84% (14043/16717)   
+03:16:17.726 STDERR: Checking out files:  85% (14210/16717)   
+03:16:17.740 STDERR: Checking out files:  86% (14377/16717)   
+03:16:17.753 STDERR: Checking out files:  87% (14544/16717)   
+03:16:17.765 STDERR: Checking out files:  88% (14711/16717)   
+03:16:17.781 STDERR: Checking out files:  89% (14879/16717)   
+03:16:17.807 STDERR: Checking out files:  90% (15046/16717)   
+03:16:17.840 STDERR: Checking out files:  91% (15213/16717)   
+03:16:17.855 STDERR: Checking out files:  92% (15380/16717)   
+03:16:17.867 STDERR: Checking out files:  93% (15547/16717)   
+03:16:17.895 STDERR: Checking out files:  94% (15714/16717)   
+03:16:17.907 STDERR: Checking out files:  95% (15882/16717)   
+03:16:17.918 STDERR: Checking out files:  96% (16049/16717)   
+03:16:17.944 STDERR: Checking out files:  97% (16216/16717)   
+03:16:17.959 STDERR: Checking out files:  98% (16383/16717)   
+03:16:17.977 STDERR: Checking out files:  99% (16550/16717)   
+03:16:17.996 STDERR: Checking out files: 100% (16717/16717)   
+03:16:17.996 STDERR: Checking out files: 100% (16717/16717), done.
+03:16:18.019 [GIT] Fetch and reset in working directory pipelines/config-api
+03:16:18.019 [GIT] Cleaning all unversioned files in working copy
+03:16:18.378 [GIT] Cleaning submodule configurations in .git/config
+03:16:18.480 [GIT] Fetching changes
+03:16:24.788 [GIT] Performing git gc
+03:16:24.897 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+03:16:27.362 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+03:16:27.364 [GIT] Removing modified files in submodules
+03:16:27.534 [GIT] Cleaning all unversioned files in working copy
+03:16:27.848 [go] Done.
+
+03:16:27.873 [go] Start to build config-api/1/code_analysis/1/sonar_analysis on 5b90ce094f1c [/var/lib/go-agent]
+03:16:27.874 [go] Current job status: passed.
+
+03:16:27.874 [go] Start to execute task: <exec command="mvn" workingdir="gocd/config/config-api" >
+<arg>sonar:sonar</arg>
+</exec>.
+03:16:27.878 [go] setting environment variable 'GO_SERVER_URL' to value 'https://goserver:8154/go/'
+03:16:27.879 [go] setting environment variable 'GO_TRIGGER_USER' to value 'changes'
+03:16:27.879 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'config-api'
+03:16:27.880 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '1'
+03:16:27.880 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '1'
+03:16:27.881 [go] setting environment variable 'GO_STAGE_NAME' to value 'code_analysis'
+03:16:27.881 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+03:16:27.882 [go] setting environment variable 'GO_JOB_NAME' to value 'sonar_analysis'
+03:16:27.883 [go] setting environment variable 'GO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:16:27.883 [go] setting environment variable 'GO_TO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:16:27.884 [go] setting environment variable 'GO_FROM_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:16:31.363 [INFO] Scanning for projects...
+03:16:32.819 Downloading: http://onejar-maven-plugin.googlecode.com/svn/mavenrepo/org/apache/maven/plugins/maven-metadata.xml
+03:16:32.820 Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+03:16:32.820 Downloading: http://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+03:16:32.828 Downloading: http://onejar-maven-plugin.googlecode.com/svn/mavenrepo/org/codehaus/mojo/maven-metadata.xml
+03:16:33.475 1/13 KB   
+03:16:33.475 4/20 KB   1/13 KB   
+03:16:33.476 4/20 KB   5/13 KB   
+03:16:33.476 4/20 KB   9/13 KB   
+03:16:33.477 4/20 KB   13/13 KB   
+03:16:33.477 8/20 KB   13/13 KB   
+03:16:33.477 12/20 KB   13/13 KB   
+03:16:33.477 13/20 KB   13/13 KB   
+03:16:33.625 16/20 KB   13/13 KB   
+03:16:33.626 20/20 KB   13/13 KB   
+03:16:33.627 20/20 KB   13/13 KB   
+03:16:33.645                       
+03:16:33.646 Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (13 KB at 15.5 KB/sec)
+03:16:33.833                       
+03:16:33.833 Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (20 KB at 19.5 KB/sec)
+03:18:40.758 Oct 30, 2015 3:18:40 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:18:40.759 INFO: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable
+03:18:40.759 Oct 30, 2015 3:18:40 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:18:40.759 INFO: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable
+03:18:40.759 Oct 30, 2015 3:18:40 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:18:40.760 INFO: Retrying connect
+03:18:40.761 Oct 30, 2015 3:18:40 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:18:40.761 INFO: Retrying connect
+03:20:49.005 Oct 30, 2015 3:20:49 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:20:49.005 INFO: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable
+03:20:49.005 Oct 30, 2015 3:20:49 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:20:49.006 INFO: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable
+03:20:49.006 Oct 30, 2015 3:20:49 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:20:49.006 INFO: Retrying connect
+03:20:49.007 Oct 30, 2015 3:20:49 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:20:49.007 INFO: Retrying connect
+03:22:56.749 Oct 30, 2015 3:22:56 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:22:56.757 INFO: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable
+03:22:56.758 Oct 30, 2015 3:22:56 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:22:56.760 INFO: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable
+03:22:56.760 Oct 30, 2015 3:22:56 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:22:56.760 INFO: Retrying connect
+03:22:56.762 Oct 30, 2015 3:22:56 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:22:56.763 INFO: Retrying connect
+03:25:04.492                       
+03:25:04.494                       
+03:25:04.496 [WARNING] Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to onejar-maven-plugin.googlecode.com (http://onejar-maven-plugin.googlecode.com/svn/mavenrepo): Network is unreachable
+03:25:04.497 [WARNING] Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to onejar-maven-plugin.googlecode.com (http://onejar-maven-plugin.googlecode.com/svn/mavenrepo): Network is unreachable
+03:25:04.533 Downloading: http://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+03:25:04.533 Downloading: http://onejar-maven-plugin.googlecode.com/svn/mavenrepo/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+03:25:04.559 Downloading: http://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+03:25:04.732 778/778 B             
+03:25:04.739 778/778 B   778/778 B   
+03:25:04.902                         
+03:25:04.903 Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml (778 B at 2.2 KB/sec)
+03:25:04.920                         
+03:25:04.920 Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml (778 B at 2.0 KB/sec)
+03:27:12.236 Oct 30, 2015 3:27:12 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:27:12.237 INFO: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable
+03:27:12.237 Oct 30, 2015 3:27:12 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:27:12.237 INFO: Retrying connect
+03:29:19.981 Oct 30, 2015 3:29:19 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:29:19.981 INFO: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable
+03:29:19.982 Oct 30, 2015 3:29:19 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:29:19.982 INFO: Retrying connect
+03:31:27.213 Oct 30, 2015 3:31:27 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:31:27.213 INFO: I/O exception (java.net.SocketException) caught when connecting to the target host: Network is unreachable
+03:31:27.213 Oct 30, 2015 3:31:27 AM org.apache.maven.wagon.providers.http.httpclient.impl.client.DefaultHttpClient tryConnect
+03:31:27.214 INFO: Retrying connect
+03:33:35.084                         
+03:33:35.086 [WARNING] Could not transfer metadata org.codehaus.mojo:sonar-maven-plugin/maven-metadata.xml from/to onejar-maven-plugin.googlecode.com (http://onejar-maven-plugin.googlecode.com/svn/mavenrepo): Network is unreachable
+03:33:35.090 Downloading: http://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/2.7.1/sonar-maven-plugin-2.7.1.pom
+03:33:35.316 4/9 KB                  
+03:33:35.317 8/9 KB   
+03:33:35.318 9/9 KB   
+03:33:35.551          
+03:33:35.551 Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/2.7.1/sonar-maven-plugin-2.7.1.pom (9 KB at 18.8 KB/sec)
+03:33:35.568 Downloading: http://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/38/mojo-parent-38.pom
+03:33:35.804 4/33 KB   
+03:33:35.805 8/33 KB   
+03:33:35.806 12/33 KB   
+03:33:35.807 16/33 KB   
+03:33:35.808 20/33 KB   
+03:33:35.809 21/33 KB   
+03:33:36.032 25/33 KB   
+03:33:36.033 29/33 KB   
+03:33:36.033 29/33 KB   
+03:33:36.034 33/33 KB   
+03:33:36.280            
+03:33:36.281 Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/38/mojo-parent-38.pom (33 KB at 45.3 KB/sec)
+03:33:36.299 Downloading: http://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/2.7.1/sonar-maven-plugin-2.7.1.jar
+03:33:36.538 2/45 KB    
+03:33:36.539 6/45 KB   
+03:33:36.540 10/45 KB   
+03:33:36.541 14/45 KB   
+03:33:36.542 18/45 KB   
+03:33:36.543 22/45 KB   
+03:33:36.544 26/45 KB   
+03:33:36.545 30/45 KB   
+03:33:36.546 34/45 KB   
+03:33:36.546 38/45 KB   
+03:33:36.547 40/45 KB   
+03:33:36.770 42/45 KB   
+03:33:36.772 44/45 KB   
+03:33:36.773 45/45 KB   
+03:33:37.004            
+03:33:37.005 Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/2.7.1/sonar-maven-plugin-2.7.1.jar (45 KB at 63.6 KB/sec)
+03:33:37.013 [INFO]                                                                         
+03:33:37.014 [INFO] ------------------------------------------------------------------------
+03:33:37.014 [INFO] Building config-api 15.2.0
+03:33:37.015 [INFO] ------------------------------------------------------------------------
+03:33:37.017 [WARNING] Failure to transfer org.apache.maven.plugins/maven-metadata.xml from http://onejar-maven-plugin.googlecode.com/svn/mavenrepo was cached in the local repository, resolution will not be reattempted until the update interval of onejar-maven-plugin.googlecode.com has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to onejar-maven-plugin.googlecode.com (http://onejar-maven-plugin.googlecode.com/svn/mavenrepo): Network is unreachable
+03:33:37.018 [WARNING] Failure to transfer org.codehaus.mojo/maven-metadata.xml from http://onejar-maven-plugin.googlecode.com/svn/mavenrepo was cached in the local repository, resolution will not be reattempted until the update interval of onejar-maven-plugin.googlecode.com has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to onejar-maven-plugin.googlecode.com (http://onejar-maven-plugin.googlecode.com/svn/mavenrepo): Network is unreachable
+03:33:37.023 [WARNING] Failure to transfer org.codehaus.mojo:sonar-maven-plugin/maven-metadata.xml from http://onejar-maven-plugin.googlecode.com/svn/mavenrepo was cached in the local repository, resolution will not be reattempted until the update interval of onejar-maven-plugin.googlecode.com has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo:sonar-maven-plugin/maven-metadata.xml from/to onejar-maven-plugin.googlecode.com (http://onejar-maven-plugin.googlecode.com/svn/mavenrepo): Network is unreachable
+03:33:37.832 [INFO] 
+03:33:37.832 [INFO] --- sonar-maven-plugin:2.7.1:sonar (default-cli) @ config-api ---
+03:33:38.069 Downloading: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom
+03:33:38.309 3/3 KB     
+03:33:38.534          
+03:33:38.534 Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom (3 KB at 6.2 KB/sec)
+03:33:38.546 Downloading: http://repo.maven.apache.org/maven2/org/sonarsource/sonar-runner/sonar-runner-api/2.5-RC1/sonar-runner-api-2.5-RC1.pom
+03:33:38.785 4/7 KB   
+03:33:38.785 7/7 KB   
+03:33:39.014          
+03:33:39.015 Downloaded: http://repo.maven.apache.org/maven2/org/sonarsource/sonar-runner/sonar-runner-api/2.5-RC1/sonar-runner-api-2.5-RC1.pom (7 KB at 13.4 KB/sec)
+03:33:39.017 Downloading: http://repo.maven.apache.org/maven2/org/sonarsource/sonar-runner/sonar-runner/2.5-RC1/sonar-runner-2.5-RC1.pom
+03:33:39.248 4/4 KB   
+03:33:39.483          
+03:33:39.483 Downloaded: http://repo.maven.apache.org/maven2/org/sonarsource/sonar-runner/sonar-runner/2.5-RC1/sonar-runner-2.5-RC1.pom (4 KB at 8.5 KB/sec)
+03:33:39.486 Downloading: http://repo.maven.apache.org/maven2/org/sonarsource/parent/parent/23/parent-23.pom
+03:33:39.718 4/23 KB   
+03:33:39.719 8/23 KB   
+03:33:39.720 12/23 KB   
+03:33:39.721 16/23 KB   
+03:33:39.722 20/23 KB   
+03:33:39.723 23/23 KB   
+03:33:39.954            
+03:33:39.955 Downloaded: http://repo.maven.apache.org/maven2/org/sonarsource/parent/parent/23/parent-23.pom (23 KB at 48.6 KB/sec)
+03:33:40.017 Downloading: http://repo.maven.apache.org/maven2/com/google/guava/guava/10.0.1/guava-10.0.1.pom
+03:33:40.250 4/6 KB     
+03:33:40.251 6/6 KB   
+03:33:40.485          
+03:33:40.486 Downloaded: http://repo.maven.apache.org/maven2/com/google/guava/guava/10.0.1/guava-10.0.1.pom (6 KB at 11.2 KB/sec)
+03:33:40.490 Downloading: http://repo.maven.apache.org/maven2/com/google/guava/guava-parent/10.0.1/guava-parent-10.0.1.pom
+03:33:40.723 2/2 KB   
+03:33:40.944          
+03:33:40.944 Downloaded: http://repo.maven.apache.org/maven2/com/google/guava/guava-parent/10.0.1/guava-parent-10.0.1.pom (2 KB at 4.2 KB/sec)
+03:33:40.965 Downloading: http://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.pom
+03:33:41.182 2/2 KB   
+03:33:41.397          
+03:33:41.398 Downloaded: http://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.pom (2 KB at 3.1 KB/sec)
+03:33:41.410 Downloading: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar
+03:33:41.410 Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.jar
+03:33:41.410 Downloading: http://repo.maven.apache.org/maven2/org/sonarsource/sonar-runner/sonar-runner-api/2.5-RC1/sonar-runner-api-2.5-RC1.jar
+03:33:41.415 Downloading: http://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.jar
+03:33:41.417 Downloading: http://repo.maven.apache.org/maven2/com/google/guava/guava/10.0.1/guava-10.0.1.jar
+03:33:41.619 2/173 KB   
+03:33:41.630 2/28 KB   2/173 KB   
+03:33:41.630 6/28 KB   2/173 KB   
+03:33:41.631 10/28 KB   2/173 KB   
+03:33:41.632 14/28 KB   2/173 KB   
+03:33:41.632 18/28 KB   2/173 KB   
+03:33:41.633 22/28 KB   2/173 KB   
+03:33:41.633 26/28 KB   2/173 KB   
+03:33:41.634 28/28 KB   2/173 KB   
+03:33:41.812 28/28 KB   6/173 KB   
+03:33:41.812 28/28 KB   10/173 KB   
+03:33:41.813 28/28 KB   14/173 KB   
+03:33:41.816 28/28 KB   18/173 KB   
+03:33:41.817 28/28 KB   22/173 KB   
+03:33:41.817 28/28 KB   26/173 KB   
+03:33:41.817 28/28 KB   30/173 KB   
+03:33:41.842                        
+03:33:41.842 Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar (28 KB at 62.5 KB/sec)
+03:33:41.998 33/173 KB              
+03:33:41.998 37/173 KB   
+03:33:41.998 40/173 KB   
+03:33:42.001 41/173 KB   
+03:33:42.001 42/173 KB   
+03:33:42.181 46/173 KB   
+03:33:42.181 50/173 KB   
+03:33:42.182 53/173 KB   
+03:33:42.184 56/173 KB   
+03:33:42.365 60/173 KB   
+03:33:42.365 64/173 KB   
+03:33:42.366 68/173 KB   
+03:33:42.366 69/173 KB   
+03:33:42.367 70/173 KB   
+03:33:42.368 73/173 KB   
+03:33:42.550 77/173 KB   
+03:33:42.551 81/173 KB   
+03:33:42.552 85/173 KB   
+03:33:42.553 89/173 KB   
+03:33:42.554 90/173 KB   
+03:33:42.593 91/173 KB   
+03:33:42.737 95/173 KB   
+03:33:42.738 99/173 KB   
+03:33:42.738 103/173 KB   
+03:33:42.739 107/173 KB   
+03:33:42.740 108/173 KB   
+03:33:42.837 109/173 KB   
+03:33:42.838 111/173 KB   
+03:33:42.923 115/173 KB   
+03:33:42.924 118/173 KB   
+03:33:42.925 122/173 KB   
+03:33:42.926 125/173 KB   
+03:33:42.926 127/173 KB   
+03:33:42.995 127/173 KB   4/246 KB   
+03:33:42.998 127/173 KB   8/246 KB   
+03:33:42.999 127/173 KB   12/246 KB   
+03:33:43.001 127/173 KB   13/246 KB   
+03:33:43.020 4/1467 KB   127/173 KB   13/246 KB   
+03:33:43.021 8/1467 KB   127/173 KB   13/246 KB   
+03:33:43.022 12/1467 KB   127/173 KB   13/246 KB   
+03:33:43.023 13/1467 KB   127/173 KB   13/246 KB   
+03:33:43.026 13/1467 KB   130/173 KB   13/246 KB   
+03:33:43.030 13/1467 KB   130/173 KB   4/33 KB   13/246 KB   
+03:33:43.030 13/1467 KB   130/173 KB   8/33 KB   13/246 KB   
+03:33:43.031 13/1467 KB   130/173 KB   12/33 KB   13/246 KB   
+03:33:43.031 13/1467 KB   130/173 KB   13/33 KB   13/246 KB   
+03:33:43.107 13/1467 KB   134/173 KB   13/33 KB   13/246 KB   
+03:33:43.108 13/1467 KB   136/173 KB   13/33 KB   13/246 KB   
+03:33:43.109 13/1467 KB   139/173 KB   13/33 KB   13/246 KB   
+03:33:43.110 13/1467 KB   143/173 KB   13/33 KB   13/246 KB   
+03:33:43.111 13/1467 KB   146/173 KB   13/33 KB   13/246 KB   
+03:33:43.151 13/1467 KB   147/173 KB   13/33 KB   13/246 KB   
+03:33:43.172 13/1467 KB   147/173 KB   13/33 KB   16/246 KB   
+03:33:43.172 13/1467 KB   147/173 KB   13/33 KB   20/246 KB   
+03:33:43.174 13/1467 KB   147/173 KB   13/33 KB   24/246 KB   
+03:33:43.174 13/1467 KB   147/173 KB   13/33 KB   28/246 KB   
+03:33:43.175 13/1467 KB   147/173 KB   13/33 KB   31/246 KB   
+03:33:43.207 16/1467 KB   147/173 KB   13/33 KB   31/246 KB   
+03:33:43.210 20/1467 KB   147/173 KB   13/33 KB   31/246 KB   
+03:33:43.210 24/1467 KB   147/173 KB   13/33 KB   31/246 KB   
+03:33:43.211 28/1467 KB   147/173 KB   13/33 KB   31/246 KB   
+03:33:43.211 31/1467 KB   147/173 KB   13/33 KB   31/246 KB   
+03:33:43.212 31/1467 KB   150/173 KB   13/33 KB   31/246 KB   
+03:33:43.225 31/1467 KB   150/173 KB   16/33 KB   31/246 KB   
+03:33:43.225 31/1467 KB   150/173 KB   20/33 KB   31/246 KB   
+03:33:43.225 31/1467 KB   150/173 KB   24/33 KB   31/246 KB   
+03:33:43.227 31/1467 KB   150/173 KB   28/33 KB   31/246 KB   
+03:33:43.227 31/1467 KB   150/173 KB   31/33 KB   31/246 KB   
+03:33:43.292 31/1467 KB   154/173 KB   31/33 KB   31/246 KB   
+03:33:43.292 31/1467 KB   155/173 KB   31/33 KB   31/246 KB   
+03:33:43.293 31/1467 KB   158/173 KB   31/33 KB   31/246 KB   
+03:33:43.295 31/1467 KB   162/173 KB   31/33 KB   31/246 KB   
+03:33:43.295 31/1467 KB   162/173 KB   31/33 KB   31/246 KB   
+03:33:43.296 31/1467 KB   165/173 KB   31/33 KB   31/246 KB   
+03:33:43.349 31/1467 KB   165/173 KB   31/33 KB   35/246 KB   
+03:33:43.349 31/1467 KB   165/173 KB   31/33 KB   39/246 KB   
+03:33:43.350 31/1467 KB   165/173 KB   31/33 KB   43/246 KB   
+03:33:43.350 31/1467 KB   165/173 KB   31/33 KB   47/246 KB   
+03:33:43.351 31/1467 KB   165/173 KB   31/33 KB   51/246 KB   
+03:33:43.352 31/1467 KB   165/173 KB   31/33 KB   52/246 KB   
+03:33:43.376 31/1467 KB   166/173 KB   31/33 KB   52/246 KB   
+03:33:43.397 31/1467 KB   169/173 KB   31/33 KB   52/246 KB   
+03:33:43.398 35/1467 KB   169/173 KB   31/33 KB   52/246 KB   
+03:33:43.398 39/1467 KB   169/173 KB   31/33 KB   52/246 KB   
+03:33:43.401 43/1467 KB   169/173 KB   31/33 KB   52/246 KB   
+03:33:43.401 47/1467 KB   169/173 KB   31/33 KB   52/246 KB   
+03:33:43.401 51/1467 KB   169/173 KB   31/33 KB   52/246 KB   
+03:33:43.401 52/1467 KB   169/173 KB   31/33 KB   52/246 KB   
+03:33:43.421 52/1467 KB   169/173 KB   33/33 KB   52/246 KB   
+03:33:43.479 52/1467 KB   173/173 KB   33/33 KB   52/246 KB   
+03:33:43.533 52/1467 KB   173/173 KB   33/33 KB   56/246 KB   
+03:33:43.533 52/1467 KB   173/173 KB   33/33 KB   60/246 KB   
+03:33:43.536 52/1467 KB   173/173 KB   33/33 KB   64/246 KB   
+03:33:43.537 52/1467 KB   173/173 KB   33/33 KB   68/246 KB   
+03:33:43.537 52/1467 KB   173/173 KB   33/33 KB   72/246 KB   
+03:33:43.537 52/1467 KB   173/173 KB   33/33 KB   76/246 KB   
+03:33:43.537 52/1467 KB   173/173 KB   33/33 KB   80/246 KB   
+03:33:43.538 52/1467 KB   173/173 KB   33/33 KB   84/246 KB   
+03:33:43.538 52/1467 KB   173/173 KB   33/33 KB   86/246 KB   
+03:33:43.591 56/1467 KB   173/173 KB   33/33 KB   86/246 KB   
+03:33:43.591 60/1467 KB   173/173 KB   33/33 KB   86/246 KB   
+03:33:43.594 64/1467 KB   173/173 KB   33/33 KB   86/246 KB   
+03:33:43.595 68/1467 KB   173/173 KB   33/33 KB   86/246 KB   
+03:33:43.595 72/1467 KB   173/173 KB   33/33 KB   86/246 KB   
+03:33:43.595 76/1467 KB   173/173 KB   33/33 KB   86/246 KB   
+03:33:43.595 80/1467 KB   173/173 KB   33/33 KB   86/246 KB   
+03:33:43.596 83/1467 KB   173/173 KB   33/33 KB   86/246 KB   
+03:33:43.624                                                  
+03:33:43.624 Downloaded: http://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.jar (33 KB at 14.6 KB/sec)
+03:33:43.669                                                  
+03:33:43.669 Downloaded: http://repo.maven.apache.org/maven2/org/sonarsource/sonar-runner/sonar-runner-api/2.5-RC1/sonar-runner-api-2.5-RC1.jar (173 KB at 76.2 KB/sec)
+03:33:43.715 83/1467 KB   90/246 KB                           
+03:33:43.717 83/1467 KB   94/246 KB   
+03:33:43.717 83/1467 KB   98/246 KB   
+03:33:43.717 83/1467 KB   102/246 KB   
+03:33:43.720 83/1467 KB   106/246 KB   
+03:33:43.720 83/1467 KB   110/246 KB   
+03:33:43.721 83/1467 KB   111/246 KB   
+03:33:43.784 87/1467 KB   111/246 KB   
+03:33:43.787 91/1467 KB   111/246 KB   
+03:33:43.787 95/1467 KB   111/246 KB   
+03:33:43.788 99/1467 KB   111/246 KB   
+03:33:43.788 103/1467 KB   111/246 KB   
+03:33:43.788 107/1467 KB   111/246 KB   
+03:33:43.788 110/1467 KB   111/246 KB   
+03:33:43.897 110/1467 KB   115/246 KB   
+03:33:43.897 110/1467 KB   119/246 KB   
+03:33:43.897 110/1467 KB   123/246 KB   
+03:33:43.901 110/1467 KB   127/246 KB   
+03:33:43.904 110/1467 KB   131/246 KB   
+03:33:43.904 110/1467 KB   135/246 KB   
+03:33:43.904 110/1467 KB   136/246 KB   
+03:33:43.976 112/1467 KB   136/246 KB   
+03:33:43.976 116/1467 KB   136/246 KB   
+03:33:43.976 120/1467 KB   136/246 KB   
+03:33:43.977 124/1467 KB   136/246 KB   
+03:33:43.977 126/1467 KB   136/246 KB   
+03:33:43.978 130/1467 KB   136/246 KB   
+03:33:43.978 134/1467 KB   136/246 KB   
+03:33:43.978 138/1467 KB   136/246 KB   
+03:33:43.979 142/1467 KB   136/246 KB   
+03:33:43.979 146/1467 KB   136/246 KB   
+03:33:43.979 150/1467 KB   136/246 KB   
+03:33:43.979 152/1467 KB   136/246 KB   
+03:33:44.076 152/1467 KB   140/246 KB   
+03:33:44.077 152/1467 KB   144/246 KB   
+03:33:44.077 152/1467 KB   148/246 KB   
+03:33:44.078 152/1467 KB   152/246 KB   
+03:33:44.078 152/1467 KB   156/246 KB   
+03:33:44.079 152/1467 KB   160/246 KB   
+03:33:44.079 152/1467 KB   164/246 KB   
+03:33:44.080 152/1467 KB   168/246 KB   
+03:33:44.080 152/1467 KB   171/246 KB   
+03:33:44.169 155/1467 KB   171/246 KB   
+03:33:44.169 159/1467 KB   171/246 KB   
+03:33:44.169 163/1467 KB   171/246 KB   
+03:33:44.169 167/1467 KB   171/246 KB   
+03:33:44.170 169/1467 KB   171/246 KB   
+03:33:44.170 173/1467 KB   171/246 KB   
+03:33:44.170 173/1467 KB   171/246 KB   
+03:33:44.170 177/1467 KB   171/246 KB   
+03:33:44.170 181/1467 KB   171/246 KB   
+03:33:44.171 184/1467 KB   171/246 KB   
+03:33:44.171 188/1467 KB   171/246 KB   
+03:33:44.171 189/1467 KB   171/246 KB   
+03:33:44.174 193/1467 KB   171/246 KB   
+03:33:44.174 197/1467 KB   171/246 KB   
+03:33:44.174 197/1467 KB   171/246 KB   
+03:33:44.259 197/1467 KB   175/246 KB   
+03:33:44.259 197/1467 KB   179/246 KB   
+03:33:44.259 197/1467 KB   183/246 KB   
+03:33:44.259 197/1467 KB   187/246 KB   
+03:33:44.260 197/1467 KB   191/246 KB   
+03:33:44.260 197/1467 KB   195/246 KB   
+03:33:44.260 197/1467 KB   199/246 KB   
+03:33:44.260 197/1467 KB   203/246 KB   
+03:33:44.260 197/1467 KB   207/246 KB   
+03:33:44.261 197/1467 KB   211/246 KB   
+03:33:44.261 197/1467 KB   215/246 KB   
+03:33:44.261 197/1467 KB   219/246 KB   
+03:33:44.261 197/1467 KB   222/246 KB   
+03:33:44.299 197/1467 KB   226/246 KB   
+03:33:44.299 197/1467 KB   230/246 KB   
+03:33:44.300 197/1467 KB   233/246 KB   
+03:33:44.358 201/1467 KB   233/246 KB   
+03:33:44.359 205/1467 KB   233/246 KB   
+03:33:44.359 209/1467 KB   233/246 KB   
+03:33:44.359 213/1467 KB   233/246 KB   
+03:33:44.359 217/1467 KB   233/246 KB   
+03:33:44.360 221/1467 KB   233/246 KB   
+03:33:44.360 225/1467 KB   233/246 KB   
+03:33:44.360 229/1467 KB   233/246 KB   
+03:33:44.360 233/1467 KB   233/246 KB   
+03:33:44.360 237/1467 KB   233/246 KB   
+03:33:44.361 241/1467 KB   233/246 KB   
+03:33:44.361 245/1467 KB   233/246 KB   
+03:33:44.361 248/1467 KB   233/246 KB   
+03:33:44.362 252/1467 KB   233/246 KB   
+03:33:44.362 256/1467 KB   233/246 KB   
+03:33:44.362 260/1467 KB   233/246 KB   
+03:33:44.363 264/1467 KB   233/246 KB   
+03:33:44.439 264/1467 KB   237/246 KB   
+03:33:44.439 264/1467 KB   239/246 KB   
+03:33:44.440 264/1467 KB   243/246 KB   
+03:33:44.440 264/1467 KB   246/246 KB   
+03:33:44.554 268/1467 KB   246/246 KB   
+03:33:44.554 269/1467 KB   246/246 KB   
+03:33:44.555 273/1467 KB   246/246 KB   
+03:33:44.555 277/1467 KB   246/246 KB   
+03:33:44.555 281/1467 KB   246/246 KB   
+03:33:44.556 285/1467 KB   246/246 KB   
+03:33:44.556 289/1467 KB   246/246 KB   
+03:33:44.556 293/1467 KB   246/246 KB   
+03:33:44.556 297/1467 KB   246/246 KB   
+03:33:44.556 301/1467 KB   246/246 KB   
+03:33:44.557 305/1467 KB   246/246 KB   
+03:33:44.557 309/1467 KB   246/246 KB   
+03:33:44.557 313/1467 KB   246/246 KB   
+03:33:44.557 317/1467 KB   246/246 KB   
+03:33:44.558 321/1467 KB   246/246 KB   
+03:33:44.558 325/1467 KB   246/246 KB   
+03:33:44.558 329/1467 KB   246/246 KB   
+03:33:44.558 333/1467 KB   246/246 KB   
+03:33:44.558 337/1467 KB   246/246 KB   
+03:33:44.559 341/1467 KB   246/246 KB   
+03:33:44.559 345/1467 KB   246/246 KB   
+03:33:44.626                            
+03:33:44.626 Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.jar (246 KB at 76.3 KB/sec)
+03:33:44.749 349/1467 KB                
+03:33:44.750 353/1467 KB   
+03:33:44.750 357/1467 KB   
+03:33:44.750 361/1467 KB   
+03:33:44.750 365/1467 KB   
+03:33:44.751 368/1467 KB   
+03:33:44.751 372/1467 KB   
+03:33:44.751 373/1467 KB   
+03:33:44.751 375/1467 KB   
+03:33:44.751 379/1467 KB   
+03:33:44.752 380/1467 KB   
+03:33:44.752 384/1467 KB   
+03:33:44.752 384/1467 KB   
+03:33:44.753 388/1467 KB   
+03:33:44.753 392/1467 KB   
+03:33:44.753 396/1467 KB   
+03:33:44.753 400/1467 KB   
+03:33:44.754 404/1467 KB   
+03:33:44.754 407/1467 KB   
+03:33:44.792 409/1467 KB   
+03:33:44.793 413/1467 KB   
+03:33:44.794 417/1467 KB   
+03:33:44.794 421/1467 KB   
+03:33:44.794 425/1467 KB   
+03:33:44.794 429/1467 KB   
+03:33:44.795 433/1467 KB   
+03:33:44.795 437/1467 KB   
+03:33:44.795 441/1467 KB   
+03:33:44.795 445/1467 KB   
+03:33:44.803 449/1467 KB   
+03:33:44.803 452/1467 KB   
+03:33:44.945 456/1467 KB   
+03:33:44.946 460/1467 KB   
+03:33:44.948 464/1467 KB   
+03:33:44.948 468/1467 KB   
+03:33:44.948 472/1467 KB   
+03:33:44.948 476/1467 KB   
+03:33:44.948 480/1467 KB   
+03:33:44.948 484/1467 KB   
+03:33:44.949 488/1467 KB   
+03:33:44.949 492/1467 KB   
+03:33:44.949 496/1467 KB   
+03:33:44.949 500/1467 KB   
+03:33:44.950 504/1467 KB   
+03:33:44.950 508/1467 KB   
+03:33:44.951 512/1467 KB   
+03:33:44.951 516/1467 KB   
+03:33:44.951 520/1467 KB   
+03:33:44.951 524/1467 KB   
+03:33:44.951 528/1467 KB   
+03:33:44.951 532/1467 KB   
+03:33:44.952 536/1467 KB   
+03:33:44.952 540/1467 KB   
+03:33:44.988 541/1467 KB   
+03:33:44.989 545/1467 KB   
+03:33:44.989 549/1467 KB   
+03:33:44.990 553/1467 KB   
+03:33:44.990 557/1467 KB   
+03:33:44.990 561/1467 KB   
+03:33:44.990 565/1467 KB   
+03:33:44.990 569/1467 KB   
+03:33:45.143 573/1467 KB   
+03:33:45.143 573/1467 KB   
+03:33:45.144 577/1467 KB   
+03:33:45.144 581/1467 KB   
+03:33:45.145 585/1467 KB   
+03:33:45.145 589/1467 KB   
+03:33:45.145 593/1467 KB   
+03:33:45.145 597/1467 KB   
+03:33:45.145 601/1467 KB   
+03:33:45.146 605/1467 KB   
+03:33:45.146 609/1467 KB   
+03:33:45.146 613/1467 KB   
+03:33:45.146 617/1467 KB   
+03:33:45.146 621/1467 KB   
+03:33:45.146 625/1467 KB   
+03:33:45.147 629/1467 KB   
+03:33:45.147 633/1467 KB   
+03:33:45.148 635/1467 KB   
+03:33:45.148 639/1467 KB   
+03:33:45.148 639/1467 KB   
+03:33:45.189 643/1467 KB   
+03:33:45.189 645/1467 KB   
+03:33:45.189 649/1467 KB   
+03:33:45.189 653/1467 KB   
+03:33:45.190 657/1467 KB   
+03:33:45.190 661/1467 KB   
+03:33:45.190 665/1467 KB   
+03:33:45.190 669/1467 KB   
+03:33:45.190 673/1467 KB   
+03:33:45.191 677/1467 KB   
+03:33:45.191 681/1467 KB   
+03:33:45.191 685/1467 KB   
+03:33:45.191 689/1467 KB   
+03:33:45.191 693/1467 KB   
+03:33:45.191 697/1467 KB   
+03:33:45.192 701/1467 KB   
+03:33:45.192 705/1467 KB   
+03:33:45.192 709/1467 KB   
+03:33:45.192 713/1467 KB   
+03:33:45.192 717/1467 KB   
+03:33:45.193 721/1467 KB   
+03:33:45.193 725/1467 KB   
+03:33:45.193 729/1467 KB   
+03:33:45.193 733/1467 KB   
+03:33:45.193 735/1467 KB   
+03:33:45.341 737/1467 KB   
+03:33:45.341 741/1467 KB   
+03:33:45.341 744/1467 KB   
+03:33:45.343 748/1467 KB   
+03:33:45.343 752/1467 KB   
+03:33:45.343 756/1467 KB   
+03:33:45.343 760/1467 KB   
+03:33:45.343 764/1467 KB   
+03:33:45.343 768/1467 KB   
+03:33:45.343 772/1467 KB   
+03:33:45.344 776/1467 KB   
+03:33:45.344 780/1467 KB   
+03:33:45.344 784/1467 KB   
+03:33:45.344 788/1467 KB   
+03:33:45.344 792/1467 KB   
+03:33:45.345 792/1467 KB   
+03:33:45.345 795/1467 KB   
+03:33:45.347 799/1467 KB   
+03:33:45.347 803/1467 KB   
+03:33:45.347 807/1467 KB   
+03:33:45.347 811/1467 KB   
+03:33:45.347 815/1467 KB   
+03:33:45.347 819/1467 KB   
+03:33:45.348 823/1467 KB   
+03:33:45.348 827/1467 KB   
+03:33:45.348 831/1467 KB   
+03:33:45.348 835/1467 KB   
+03:33:45.348 839/1467 KB   
+03:33:45.349 843/1467 KB   
+03:33:45.349 847/1467 KB   
+03:33:45.349 851/1467 KB   
+03:33:45.349 855/1467 KB   
+03:33:45.349 859/1467 KB   
+03:33:45.349 861/1467 KB   
+03:33:45.386 865/1467 KB   
+03:33:45.386 869/1467 KB   
+03:33:45.386 869/1467 KB   
+03:33:45.387 873/1467 KB   
+03:33:45.388 877/1467 KB   
+03:33:45.388 879/1467 KB   
+03:33:45.388 883/1467 KB   
+03:33:45.388 887/1467 KB   
+03:33:45.388 891/1467 KB   
+03:33:45.389 895/1467 KB   
+03:33:45.389 899/1467 KB   
+03:33:45.389 903/1467 KB   
+03:33:45.389 907/1467 KB   
+03:33:45.389 911/1467 KB   
+03:33:45.389 914/1467 KB   
+03:33:45.536 918/1467 KB   
+03:33:45.536 922/1467 KB   
+03:33:45.536 926/1467 KB   
+03:33:45.537 930/1467 KB   
+03:33:45.537 930/1467 KB   
+03:33:45.537 934/1467 KB   
+03:33:45.537 938/1467 KB   
+03:33:45.538 942/1467 KB   
+03:33:45.538 946/1467 KB   
+03:33:45.538 950/1467 KB   
+03:33:45.538 954/1467 KB   
+03:33:45.538 958/1467 KB   
+03:33:45.539 962/1467 KB   
+03:33:45.539 966/1467 KB   
+03:33:45.539 970/1467 KB   
+03:33:45.539 974/1467 KB   
+03:33:45.539 978/1467 KB   
+03:33:45.539 982/1467 KB   
+03:33:45.540 986/1467 KB   
+03:33:45.540 990/1467 KB   
+03:33:45.540 994/1467 KB   
+03:33:45.540 998/1467 KB   
+03:33:45.541 1002/1467 KB   
+03:33:45.541 1006/1467 KB   
+03:33:45.541 1010/1467 KB   
+03:33:45.541 1014/1467 KB   
+03:33:45.542 1018/1467 KB   
+03:33:45.542 1022/1467 KB   
+03:33:45.542 1026/1467 KB   
+03:33:45.542 1029/1467 KB   
+03:33:45.542 1033/1467 KB   
+03:33:45.542 1034/1467 KB   
+03:33:45.543 1038/1467 KB   
+03:33:45.543 1042/1467 KB   
+03:33:45.543 1046/1467 KB   
+03:33:45.543 1050/1467 KB   
+03:33:45.543 1054/1467 KB   
+03:33:45.543 1058/1467 KB   
+03:33:45.544 1062/1467 KB   
+03:33:45.544 1066/1467 KB   
+03:33:45.544 1070/1467 KB   
+03:33:45.544 1074/1467 KB   
+03:33:45.544 1078/1467 KB   
+03:33:45.551 1082/1467 KB   
+03:33:45.551 1086/1467 KB   
+03:33:45.553 1090/1467 KB   
+03:33:45.555 1094/1467 KB   
+03:33:45.555 1098/1467 KB   
+03:33:45.555 1102/1467 KB   
+03:33:45.556 1106/1467 KB   
+03:33:45.556 1109/1467 KB   
+03:33:45.580 1113/1467 KB   
+03:33:45.580 1115/1467 KB   
+03:33:45.583 1119/1467 KB   
+03:33:45.583 1123/1467 KB   
+03:33:45.583 1127/1467 KB   
+03:33:45.583 1131/1467 KB   
+03:33:45.583 1135/1467 KB   
+03:33:45.584 1139/1467 KB   
+03:33:45.585 1143/1467 KB   
+03:33:45.585 1147/1467 KB   
+03:33:45.585 1151/1467 KB   
+03:33:45.585 1155/1467 KB   
+03:33:45.585 1159/1467 KB   
+03:33:45.586 1163/1467 KB   
+03:33:45.586 1167/1467 KB   
+03:33:45.586 1171/1467 KB   
+03:33:45.586 1175/1467 KB   
+03:33:45.586 1179/1467 KB   
+03:33:45.586 1183/1467 KB   
+03:33:45.586 1187/1467 KB   
+03:33:45.587 1191/1467 KB   
+03:33:45.587 1195/1467 KB   
+03:33:45.587 1199/1467 KB   
+03:33:45.587 1203/1467 KB   
+03:33:45.590 1207/1467 KB   
+03:33:45.590 1211/1467 KB   
+03:33:45.590 1215/1467 KB   
+03:33:45.590 1219/1467 KB   
+03:33:45.590 1219/1467 KB   
+03:33:45.733 1223/1467 KB   
+03:33:45.733 1227/1467 KB   
+03:33:45.733 1231/1467 KB   
+03:33:45.733 1235/1467 KB   
+03:33:45.734 1239/1467 KB   
+03:33:45.734 1243/1467 KB   
+03:33:45.734 1247/1467 KB   
+03:33:45.734 1251/1467 KB   
+03:33:45.734 1255/1467 KB   
+03:33:45.735 1259/1467 KB   
+03:33:45.735 1263/1467 KB   
+03:33:45.735 1267/1467 KB   
+03:33:45.735 1271/1467 KB   
+03:33:45.735 1275/1467 KB   
+03:33:45.736 1276/1467 KB   
+03:33:45.738 1278/1467 KB   
+03:33:45.739 1282/1467 KB   
+03:33:45.739 1286/1467 KB   
+03:33:45.739 1290/1467 KB   
+03:33:45.739 1294/1467 KB   
+03:33:45.739 1298/1467 KB   
+03:33:45.739 1302/1467 KB   
+03:33:45.740 1306/1467 KB   
+03:33:45.740 1310/1467 KB   
+03:33:45.740 1314/1467 KB   
+03:33:45.740 1318/1467 KB   
+03:33:45.740 1322/1467 KB   
+03:33:45.740 1326/1467 KB   
+03:33:45.741 1330/1467 KB   
+03:33:45.741 1334/1467 KB   
+03:33:45.741 1338/1467 KB   
+03:33:45.741 1342/1467 KB   
+03:33:45.741 1346/1467 KB   
+03:33:45.741 1350/1467 KB   
+03:33:45.742 1354/1467 KB   
+03:33:45.742 1358/1467 KB   
+03:33:45.742 1362/1467 KB   
+03:33:45.742 1366/1467 KB   
+03:33:45.742 1370/1467 KB   
+03:33:45.742 1374/1467 KB   
+03:33:45.742 1378/1467 KB   
+03:33:45.743 1382/1467 KB   
+03:33:45.743 1386/1467 KB   
+03:33:45.743 1390/1467 KB   
+03:33:45.743 1394/1467 KB   
+03:33:45.743 1398/1467 KB   
+03:33:45.743 1402/1467 KB   
+03:33:45.744 1406/1467 KB   
+03:33:45.744 1410/1467 KB   
+03:33:45.744 1412/1467 KB   
+03:33:45.777 1416/1467 KB   
+03:33:45.777 1419/1467 KB   
+03:33:45.778 1423/1467 KB   
+03:33:45.779 1427/1467 KB   
+03:33:45.779 1431/1467 KB   
+03:33:45.779 1435/1467 KB   
+03:33:45.779 1439/1467 KB   
+03:33:45.779 1443/1467 KB   
+03:33:45.779 1447/1467 KB   
+03:33:45.780 1451/1467 KB   
+03:33:45.780 1455/1467 KB   
+03:33:45.780 1459/1467 KB   
+03:33:45.780 1463/1467 KB   
+03:33:45.780 1467/1467 KB   
+03:33:45.781 1467/1467 KB   
+03:33:45.982                
+03:33:45.982 Downloaded: http://repo.maven.apache.org/maven2/com/google/guava/guava/10.0.1/guava-10.0.1.jar (1467 KB at 321.1 KB/sec)
+03:33:46.190 [INFO] User cache: /var/go/.sonar/cache
+03:33:46.216 [ERROR] SonarQube server 'http://localhost:9000' can not be reached
+03:33:46.218 [INFO] ------------------------------------------------------------------------
+03:33:46.218 [INFO] BUILD FAILURE
+03:33:46.219 [INFO] ------------------------------------------------------------------------
+03:33:46.220 [INFO] Total time: 17:14.904s
+03:33:46.220 [INFO] Finished at: Fri Oct 30 03:33:46 UTC 2015
+03:33:46.350 [INFO] Final Memory: 10M/135M
+03:33:46.351 [INFO] ------------------------------------------------------------------------
+03:33:46.359 [ERROR] Failed to execute goal org.codehaus.mojo:sonar-maven-plugin:2.7.1:sonar (default-cli) on project config-api: Fail to download libraries from server: java.net.ConnectException: Connection refused -> [Help 1]
+03:33:46.360 [ERROR] 
+03:33:46.360 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+03:33:46.361 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+03:33:46.361 [ERROR] 
+03:33:46.361 [ERROR] For more information about the errors and possible solutions, please read the following articles:
+03:33:46.362 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+03:33:46.429 [go] Current job status: failed.
+
+03:33:46.437 [go] Start to create properties config-api/1/code_analysis/1/sonar_analysis on 5b90ce094f1c [/var/lib/go-agent]
+03:33:46.437 [go] Start to upload config-api/1/code_analysis/1/sonar_analysis on 5b90ce094f1c [/var/lib/go-agent]
+03:33:46.561 [go] Job completed config-api/1/code_analysis/1/sonar_analysis on 5b90ce094f1c [/var/lib/go-agent]

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="75">
-  <server artifactsdir="artifacts" agentAutoRegisterKey="123456789abcdef" commandRepositoryLocation="default" serverId="ebdd2243-53fc-4e80-a219-53696b9109fb" />
+  <server artifactsdir="artifacts" purgeStart="10.0" purgeUpto="20.0" agentAutoRegisterKey="123456789abcdef" commandRepositoryLocation="default" serverId="ebdd2243-53fc-4e80-a219-53696b9109fb" />
   <pipelines group="GoCD">
     <pipeline name="gocd-root" isLocked="false">
       <timer>0 15 * * * ?</timer>
@@ -99,11 +99,14 @@
                 <runif status="passed" />
               </exec>
             </tasks>
+            <artifacts>
+              <test src="gocd/config/config-api/target" />
+            </artifacts>
           </job>
           <job name="sonar_analysis">
             <tasks>
-              <exec command="mvn" workingdir="gocd/config/config-api">
-                <arg>sonar:sonar</arg>
+              <exec command="echo" workingdir="gocd/config/config-api">
+                <arg>sonar</arg>
                 <runif status="passed" />
               </exec>
             </tasks>
@@ -119,7 +122,44 @@
         <jobs>
           <job name="unit-test">
             <tasks>
-              <exec command="mvn" workingdir="gocd/base">
+              <exec command="mvn" workingdir="gocd">
+                <arg>clean</arg>
+                <arg>test</arg>
+                <arg>-pl base</arg>
+                <arg>-am</arg>
+                <runif status="passed" />
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
+    <pipeline name="util">
+      <materials>
+        <git url="git@github.com:twconsultants/leanswdev.git" />
+      </materials>
+      <stage name="code_analysis">
+        <jobs>
+          <job name="unit-test">
+            <tasks>
+              <exec command="mvn" workingdir="gocd/util">
+                <arg>clean</arg>
+                <arg>test</arg>
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
+    <pipeline name="test-utils">
+      <materials>
+        <git url="git@github.com:twconsultants/leanswdev.git" />
+      </materials>
+      <stage name="code_analysis">
+        <jobs>
+          <job name="unit-test">
+            <tasks>
+              <exec command="mvn" workingdir="gocd/test-utils">
                 <arg>clean</arg>
                 <arg>test</arg>
               </exec>
@@ -136,10 +176,14 @@
           <job name="unit-test">
             <tasks>
               <exec command="mvn" workingdir="gocd/config/config-server">
-                <arg>clean test</arg>
+                <arg>clean</arg>
+                <arg>test</arg>
                 <runif status="passed" />
               </exec>
             </tasks>
+            <artifacts>
+              <test src="gocd/config/config-server/target" />
+            </artifacts>
           </job>
           <job name="sonar-analysis">
             <tasks>
@@ -154,9 +198,9 @@
     </pipeline>
   </templates>
   <agents>
-    <agent hostname="ddec34acbac6" ipaddress="192.168.42.49" uuid="4b316ec5-cd3b-4cc4-8454-a98cda0edce1" />
-    <agent hostname="05f6957dbfe0" ipaddress="192.168.42.50" uuid="a5d6b96a-4ea5-4939-82d3-d362661edf2c" />
-    <agent hostname="83f0e57b3635" ipaddress="192.168.42.51" uuid="07238bd9-f97a-4ef8-9674-9a5ad030e6ac" />
+    <agent hostname="2e612a0de52d" ipaddress="192.168.42.55" uuid="4255ba58-3153-4487-84db-4c27329f8ad9" />
+    <agent hostname="9838e6db3656" ipaddress="192.168.42.57" uuid="97acb57a-69da-49c3-bfd3-3bfe37fdd276" />
+    <agent hostname="5b90ce094f1c" ipaddress="192.168.42.56" uuid="83906912-7174-4e1f-8d8e-f464ac1980fb" />
   </agents>
 </cruise>
 

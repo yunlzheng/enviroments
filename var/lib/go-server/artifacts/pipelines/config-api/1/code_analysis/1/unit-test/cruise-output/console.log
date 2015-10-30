@@ -1,0 +1,296 @@
+03:12:22.315 [go] Job Started: 2015-10-30 03:12:22 UTC
+
+03:12:22.315 [go] Start to prepare config-api/1/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]
+03:12:22.330 [go] Start to update materials.
+
+03:12:22.334 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+03:12:22.347 STDERR: Cloning into '/var/lib/go-agent/pipelines/config-api'...
+03:14:01.208 STDERR: Checking out files:  50% (8359/16717)   
+03:14:01.221 STDERR: Checking out files:  51% (8526/16717)   
+03:14:01.234 STDERR: Checking out files:  52% (8693/16717)   
+03:14:01.248 STDERR: Checking out files:  53% (8861/16717)   
+03:14:01.268 STDERR: Checking out files:  54% (9028/16717)   
+03:14:01.280 STDERR: Checking out files:  55% (9195/16717)   
+03:14:01.290 STDERR: Checking out files:  56% (9362/16717)   
+03:14:01.301 STDERR: Checking out files:  57% (9529/16717)   
+03:14:01.313 STDERR: Checking out files:  58% (9696/16717)   
+03:14:01.324 STDERR: Checking out files:  59% (9864/16717)   
+03:14:01.336 STDERR: Checking out files:  60% (10031/16717)   
+03:14:01.347 STDERR: Checking out files:  61% (10198/16717)   
+03:14:01.359 STDERR: Checking out files:  62% (10365/16717)   
+03:14:01.368 STDERR: Checking out files:  63% (10532/16717)   
+03:14:01.384 STDERR: Checking out files:  64% (10699/16717)   
+03:14:01.409 STDERR: Checking out files:  65% (10867/16717)   
+03:14:01.423 STDERR: Checking out files:  66% (11034/16717)   
+03:14:01.432 STDERR: Checking out files:  67% (11201/16717)   
+03:14:01.442 STDERR: Checking out files:  68% (11368/16717)   
+03:14:01.452 STDERR: Checking out files:  69% (11535/16717)   
+03:14:01.463 STDERR: Checking out files:  70% (11702/16717)   
+03:14:01.472 STDERR: Checking out files:  71% (11870/16717)   
+03:14:01.481 STDERR: Checking out files:  72% (12037/16717)   
+03:14:01.494 STDERR: Checking out files:  73% (12204/16717)   
+03:14:01.506 STDERR: Checking out files:  74% (12371/16717)   
+03:14:01.518 STDERR: Checking out files:  75% (12538/16717)   
+03:14:01.534 STDERR: Checking out files:  76% (12705/16717)   
+03:14:01.557 STDERR: Checking out files:  77% (12873/16717)   
+03:14:01.663 STDERR: Checking out files:  78% (13040/16717)   
+03:14:01.677 STDERR: Checking out files:  79% (13207/16717)   
+03:14:01.717 STDERR: Checking out files:  80% (13374/16717)   
+03:14:01.850 STDERR: Checking out files:  81% (13541/16717)   
+03:14:01.864 STDERR: Checking out files:  82% (13708/16717)   
+03:14:01.876 STDERR: Checking out files:  83% (13876/16717)   
+03:14:01.912 STDERR: Checking out files:  84% (14043/16717)   
+03:14:01.938 STDERR: Checking out files:  85% (14210/16717)   
+03:14:01.966 STDERR: Checking out files:  86% (14377/16717)   
+03:14:01.979 STDERR: Checking out files:  87% (14544/16717)   
+03:14:01.991 STDERR: Checking out files:  88% (14711/16717)   
+03:14:02.006 STDERR: Checking out files:  89% (14879/16717)   
+03:14:02.031 STDERR: Checking out files:  90% (15046/16717)   
+03:14:02.063 STDERR: Checking out files:  91% (15213/16717)   
+03:14:02.076 STDERR: Checking out files:  92% (15380/16717)   
+03:14:02.089 STDERR: Checking out files:  93% (15547/16717)   
+03:14:02.116 STDERR: Checking out files:  94% (15714/16717)   
+03:14:02.128 STDERR: Checking out files:  95% (15882/16717)   
+03:14:02.139 STDERR: Checking out files:  96% (16049/16717)   
+03:14:02.164 STDERR: Checking out files:  97% (16216/16717)   
+03:14:02.179 STDERR: Checking out files:  98% (16383/16717)   
+03:14:02.195 STDERR: Checking out files:  99% (16550/16717)   
+03:14:02.203 STDERR: Checking out files:  99% (16655/16717)   
+03:14:02.215 STDERR: Checking out files: 100% (16717/16717)   
+03:14:02.215 STDERR: Checking out files: 100% (16717/16717), done.
+03:14:02.236 [GIT] Fetch and reset in working directory pipelines/config-api
+03:14:02.236 [GIT] Cleaning all unversioned files in working copy
+03:14:02.517 [GIT] Cleaning submodule configurations in .git/config
+03:14:02.627 [GIT] Fetching changes
+03:14:09.550 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
+03:14:16.155 [GIT] Performing git gc
+03:14:16.258 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+03:14:16.664 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+03:14:16.666 [GIT] Removing modified files in submodules
+03:14:16.800 [GIT] Cleaning all unversioned files in working copy
+03:14:17.121 [go] Done.
+
+03:14:17.142 [go] Start to build config-api/1/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]
+03:14:17.143 [go] Current job status: passed.
+
+03:14:17.143 [go] Start to execute task: <exec command="mvn" workingdir="gocd/config/config-api" >
+<arg>test</arg>
+</exec>.
+03:14:17.148 [go] setting environment variable 'GO_SERVER_URL' to value 'https://goserver:8154/go/'
+03:14:17.149 [go] setting environment variable 'GO_TRIGGER_USER' to value 'changes'
+03:14:17.150 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'config-api'
+03:14:17.151 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '1'
+03:14:17.151 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '1'
+03:14:17.152 [go] setting environment variable 'GO_STAGE_NAME' to value 'code_analysis'
+03:14:17.152 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+03:14:17.153 [go] setting environment variable 'GO_JOB_NAME' to value 'unit-test'
+03:14:17.153 [go] setting environment variable 'GO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:14:17.154 [go] setting environment variable 'GO_TO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:14:17.154 [go] setting environment variable 'GO_FROM_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:14:19.427 [INFO] Scanning for projects...
+03:14:19.551 [INFO]                                                                         
+03:14:19.551 [INFO] ------------------------------------------------------------------------
+03:14:19.552 [INFO] Building config-api 15.2.0
+03:14:19.553 [INFO] ------------------------------------------------------------------------
+03:14:21.639 [INFO] 
+03:14:21.639 [INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ config-api ---
+03:14:21.853 [INFO] Using 'UTF-8' encoding to copy filtered resources.
+03:14:21.853 [INFO] skip non existing resourceDirectory /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/src/main/resources
+03:14:21.855 [INFO] 
+03:14:21.855 [INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ config-api ---
+03:14:22.755 [INFO] Compiling 239 source files to /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/target/classes
+03:14:28.186 [INFO] /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/src/com/thoughtworks/go/feature/NonPipelineFeatureValidator.java: /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/src/com/thoughtworks/go/feature/NonPipelineFeatureValidator.java uses or overrides a deprecated API.
+03:14:28.187 [INFO] /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/src/com/thoughtworks/go/feature/NonPipelineFeatureValidator.java: Recompile with -Xlint:deprecation for details.
+03:14:28.187 [INFO] /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/src/com/thoughtworks/go/config/ValidationContext.java: Some input files use unchecked or unsafe operations.
+03:14:28.187 [INFO] /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/src/com/thoughtworks/go/config/ValidationContext.java: Recompile with -Xlint:unchecked for details.
+03:14:28.187 [INFO] 
+03:14:28.188 [INFO] --- maven-resources-plugin:2.3:testResources (default-testResources) @ config-api ---
+03:14:28.192 [INFO] Using 'UTF-8' encoding to copy filtered resources.
+03:14:28.194 [INFO] Copying 1 resource
+03:14:28.200 [INFO] 
+03:14:28.200 [INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ config-api ---
+03:14:28.258 [INFO] Compiling 92 source files to /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/target/test-classes
+03:14:30.912 [INFO] /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/test/com/thoughtworks/go/config/preprocessor/ParamResolverTest.java: Some input files use or override a deprecated API.
+03:14:30.913 [INFO] /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/test/com/thoughtworks/go/config/preprocessor/ParamResolverTest.java: Recompile with -Xlint:deprecation for details.
+03:14:30.913 [INFO] /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/test/com/thoughtworks/go/plugins/PluginTestUtil.java: Some input files use unchecked or unsafe operations.
+03:14:30.913 [INFO] /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/test/com/thoughtworks/go/plugins/PluginTestUtil.java: Recompile with -Xlint:unchecked for details.
+03:14:30.914 [INFO] 
+03:14:30.914 [INFO] --- maven-surefire-plugin:2.10:test (default-test) @ config-api ---
+03:14:31.247 [INFO] Surefire report directory: /var/lib/go-agent/pipelines/config-api/gocd/config/config-api/target/surefire-reports
+03:14:31.679 Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.10/surefire-junit4-2.10.pom
+03:14:33.376 3/3 KB   
+03:14:33.603          
+03:14:33.605 Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.10/surefire-junit4-2.10.pom (3 KB at 1.3 KB/sec)
+03:14:33.617 Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.10/surefire-providers-2.10.pom
+03:14:33.850 3/3 KB   
+03:14:34.070          
+03:14:34.070 Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.10/surefire-providers-2.10.pom (3 KB at 4.8 KB/sec)
+03:14:34.176 Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.10/surefire-junit4-2.10.jar
+03:14:34.404 4/33 KB   
+03:14:34.406 8/33 KB   
+03:14:34.407 12/33 KB   
+03:14:34.408 13/33 KB   
+03:14:34.623 16/33 KB   
+03:14:34.624 20/33 KB   
+03:14:34.625 24/33 KB   
+03:14:34.626 28/33 KB   
+03:14:34.627 32/33 KB   
+03:14:34.628 33/33 KB   
+03:14:34.855            
+03:14:34.856 Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.10/surefire-junit4-2.10.jar (33 KB at 47.9 KB/sec)
+03:14:34.880 
+03:14:34.880 -------------------------------------------------------
+03:14:34.881  T E S T S
+03:14:34.881 -------------------------------------------------------
+03:14:35.689 Running com.thoughtworks.go.domain.AbstractTaskTest
+03:14:36.079 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.39 sec
+03:14:36.092 Running com.thoughtworks.go.domain.scm.SCMsTest
+03:14:36.133 log4j:WARN No appenders could be found for logger (com.thoughtworks.go.security.CipherProvider).
+03:14:36.134 log4j:WARN Please initialize the log4j system properly.
+03:14:36.137 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+03:14:36.140 Running com.thoughtworks.go.domain.scm.SCMTest
+03:14:36.219 Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
+03:14:36.230 Running com.thoughtworks.go.domain.IpAddressTest
+03:14:36.241 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+03:14:36.250 Running com.thoughtworks.go.domain.CaseInsensitiveStringTest
+03:14:36.251 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+03:14:36.266 Running com.thoughtworks.go.domain.config.ArgsTest
+03:14:36.266 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+03:14:36.268 Running com.thoughtworks.go.domain.config.AdminsConfigTest
+03:14:36.270 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+03:14:36.271 Running com.thoughtworks.go.domain.GoConfigRevisionTest
+03:14:36.307 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+03:14:36.309 Running com.thoughtworks.go.config.PasswordFileConfigTest
+03:14:36.312 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+03:14:36.326 Running com.thoughtworks.go.config.OnCancelConfigTest
+03:14:36.332 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+03:14:36.334 Running com.thoughtworks.go.config.PipelineTemplateConfigTest
+03:14:36.430 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec
+03:14:36.432 Running com.thoughtworks.go.config.AdminRoleTest
+03:14:36.443 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+03:14:36.444 Running com.thoughtworks.go.config.GoConfigSchemaTest
+03:14:36.445 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+03:14:36.445 Running com.thoughtworks.go.config.SecurityConfigTest
+03:14:36.454 Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+03:14:36.455 Running com.thoughtworks.go.config.domain.VariableValueConfigTest
+03:14:36.456 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+03:14:36.457 Running com.thoughtworks.go.config.domain.EnvironmentVariablesConfigTest
+03:14:36.486 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+03:14:36.487 Running com.thoughtworks.go.config.pluggabletask.PluggableTaskTest
+03:14:36.520 Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+03:14:36.521 Running com.thoughtworks.go.config.BuildTaskTest
+03:14:36.610 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec
+03:14:36.612 Running com.thoughtworks.go.config.EnvironmentVariableConfigTest
+03:14:36.644 Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+03:14:36.645 Running com.thoughtworks.go.config.ValidationContextTest
+03:14:36.649 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+03:14:36.650 Running com.thoughtworks.go.config.parser.GoConfigFieldTypeConverterTest
+03:14:36.731 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec
+03:14:36.732 Running com.thoughtworks.go.config.EnvironmentConfigTest
+03:14:36.752 Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+03:14:36.753 Running com.thoughtworks.go.config.AntTaskTest
+03:14:36.756 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+03:14:36.758 Running com.thoughtworks.go.config.TabTest
+03:14:36.761 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+03:14:36.769 Running com.thoughtworks.go.config.GoConfigGraphWalkerTest
+03:14:36.814 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+03:14:36.815 Running com.thoughtworks.go.config.ConfigContextTest
+03:14:36.816 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+03:14:36.816 Running com.thoughtworks.go.config.registry.ConfigElementImplementationRegistryTest
+03:14:36.950 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec
+03:14:36.951 Running com.thoughtworks.go.config.materials.AbstractMaterialConfigTest
+03:14:37.113 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec
+03:14:37.115 Running com.thoughtworks.go.config.materials.PackageMaterialConfigTest
+03:14:37.125 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+03:14:37.126 Running com.thoughtworks.go.config.materials.svn.SvnMaterialConfigTest
+03:14:37.135 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+03:14:37.137 Running com.thoughtworks.go.config.materials.PluggableSCMMaterialConfigTest
+03:14:37.154 Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+03:14:37.156 Running com.thoughtworks.go.config.materials.MaterialConfigsTest
+03:14:37.185 Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+03:14:37.190 Running com.thoughtworks.go.config.materials.git.GitMaterialConfigTest
+03:14:37.190 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+03:14:37.205 Running com.thoughtworks.go.config.materials.ScmMaterialConfigTest
+03:14:37.206 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+03:14:37.208 Running com.thoughtworks.go.config.materials.perforce.P4MaterialConfigTest
+03:14:37.209 Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec
+03:14:37.215 Running com.thoughtworks.go.config.materials.mercurial.HgMaterialConfigTest
+03:14:37.216 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+03:14:37.220 Running com.thoughtworks.go.config.RoleTest
+03:14:37.221 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+03:14:37.226 Running com.thoughtworks.go.config.NantTaskTest
+03:14:37.230 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+03:14:37.232 Running com.thoughtworks.go.config.ServerConfigTest
+03:14:37.257 Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+03:14:37.264 Running com.thoughtworks.go.config.MailHostTest
+03:14:37.274 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+03:14:37.275 Running com.thoughtworks.go.config.validation.ArtifactDirValidatorTest
+03:14:37.281 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+03:14:37.282 Running com.thoughtworks.go.config.validation.CommandRepositoryLocationValidatorTest
+03:14:37.357 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
+03:14:37.359 Running com.thoughtworks.go.config.validation.UniqueOnCancelValidatorTest
+03:14:37.625 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 sec
+03:14:37.627 Running com.thoughtworks.go.config.validation.NameTypeValidatorTest
+03:14:37.629 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+03:14:37.630 Running com.thoughtworks.go.config.validation.FilePathTypeValidatorTest
+03:14:37.631 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+03:14:37.631 Running com.thoughtworks.go.config.validation.TaskWorkingFolderValidatorTest
+03:14:37.639 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+03:14:37.640 Running com.thoughtworks.go.config.LdapConfigTest
+03:14:37.644 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+03:14:37.644 Running com.thoughtworks.go.config.TemplateExpansionPreprocessorTest
+03:14:37.656 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+03:14:37.656 Running com.thoughtworks.go.config.TemplatesConfigTest
+03:14:37.675 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+03:14:37.675 Running com.thoughtworks.go.config.PathFromAncestorTest
+03:14:37.678 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+03:14:37.679 Running com.thoughtworks.go.config.TabsTest
+03:14:37.681 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+03:14:37.681 Running com.thoughtworks.go.config.ExecTaskTest
+03:14:37.706 Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+03:14:37.706 Running com.thoughtworks.go.config.RunMultipleInstanceJobTypeConfigTest
+03:14:37.719 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+03:14:37.720 Running com.thoughtworks.go.config.preprocessor.ParamStateMachineTest
+03:14:37.722 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+03:14:37.723 Running com.thoughtworks.go.config.preprocessor.ParamResolverTest
+03:14:37.858 Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec
+03:14:37.862 Running com.thoughtworks.go.config.TimerConfigTest
+03:14:37.867 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+03:14:37.868 Running com.thoughtworks.go.config.GoConfigFieldTest
+03:14:37.909 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+03:14:37.910 Running com.thoughtworks.go.config.CruiseConfigClassTest
+03:14:37.912 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+03:14:37.913 Running com.thoughtworks.go.config.RakeTaskTest
+03:14:37.917 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+03:14:37.917 Running com.thoughtworks.go.security.GoCipherTest
+03:14:37.923 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+03:14:37.923 Running com.thoughtworks.go.util.ArtifactLogUtilTest
+03:14:37.925 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+03:14:37.925 Running com.thoughtworks.go.util.pool.DigestObjectPoolsTest
+03:14:37.940 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+03:14:37.940 Running com.thoughtworks.go.util.command.UrlArgumentTest
+03:14:37.948 Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+03:14:37.948 Running com.thoughtworks.go.util.command.EnvironmentVariableContextTest
+03:14:37.976 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+03:14:37.977 Running com.thoughtworks.go.util.CachedDigestUtilsTest
+03:14:38.089 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec
+03:14:38.089 Running com.thoughtworks.go.util.XpathUtilsTest
+03:14:38.285 [Fatal Error] :1:1: Content is not allowed in prolog.
+03:14:38.378 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 sec
+03:14:38.427 
+03:14:38.427 Results :
+03:14:38.428 
+03:14:38.428 Tests run: 466, Failures: 0, Errors: 0, Skipped: 1
+03:14:38.428 
+03:14:38.445 [INFO] ------------------------------------------------------------------------
+03:14:38.445 [INFO] BUILD SUCCESS
+03:14:38.445 [INFO] ------------------------------------------------------------------------
+03:14:38.446 [INFO] Total time: 19.040s
+03:14:38.446 [INFO] Finished at: Fri Oct 30 03:14:38 UTC 2015
+03:14:38.690 [INFO] Final Memory: 24M/329M
+03:14:38.692 [INFO] ------------------------------------------------------------------------
+03:14:38.793 [go] Current job status: passed.
+
+03:14:38.803 [go] Start to create properties config-api/1/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]
+03:14:38.803 [go] Start to upload config-api/1/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]
+03:14:38.860 [go] Job completed config-api/1/code_analysis/1/unit-test on 9838e6db3656 [/var/lib/go-agent]

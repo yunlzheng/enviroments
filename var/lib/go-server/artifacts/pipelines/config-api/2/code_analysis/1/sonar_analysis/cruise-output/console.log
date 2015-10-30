@@ -1,0 +1,40 @@
+05:56:56.717 [go] Job Started: 2015-10-30 05:56:56 UTC
+
+05:56:56.717 [go] Start to prepare config-api/2/code_analysis/1/sonar_analysis on 5b90ce094f1c [/var/lib/go-agent]
+05:56:56.727 [go] Start to update materials.
+
+05:56:56.727 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+05:56:56.932 [GIT] Fetch and reset in working directory pipelines/config-api
+05:56:56.932 [GIT] Cleaning all unversioned files in working copy
+05:56:57.140 [GIT] Cleaning submodule configurations in .git/config
+05:56:57.242 [GIT] Fetching changes
+05:57:01.218 [GIT] Performing git gc
+05:57:01.328 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+05:57:01.503 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+05:57:01.605 [GIT] Removing modified files in submodules
+05:57:01.699 [GIT] Cleaning all unversioned files in working copy
+05:57:01.915 [go] Done.
+
+05:57:01.941 [go] Start to build config-api/2/code_analysis/1/sonar_analysis on 5b90ce094f1c [/var/lib/go-agent]
+05:57:01.941 [go] Current job status: passed.
+
+05:57:01.941 [go] Start to execute task: <exec command="echo" workingdir="gocd/config/config-api" >
+<arg>sonar</arg>
+</exec>.
+05:57:01.942 [go] setting environment variable 'GO_SERVER_URL' to value 'https://goserver:8154/go/'
+05:57:01.942 [go] setting environment variable 'GO_TRIGGER_USER' to value 'anonymous'
+05:57:01.942 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'config-api'
+05:57:01.943 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '2'
+05:57:01.949 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '2'
+05:57:01.949 [go] setting environment variable 'GO_STAGE_NAME' to value 'code_analysis'
+05:57:01.950 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+05:57:01.950 [go] setting environment variable 'GO_JOB_NAME' to value 'sonar_analysis'
+05:57:01.950 [go] setting environment variable 'GO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+05:57:01.957 [go] setting environment variable 'GO_TO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+05:57:01.958 [go] setting environment variable 'GO_FROM_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+05:57:01.966 sonar
+05:57:02.084 [go] Current job status: passed.
+
+05:57:02.092 [go] Start to create properties config-api/2/code_analysis/1/sonar_analysis on 5b90ce094f1c [/var/lib/go-agent]
+05:57:02.092 [go] Start to upload config-api/2/code_analysis/1/sonar_analysis on 5b90ce094f1c [/var/lib/go-agent]
+05:57:02.137 [go] Job completed config-api/2/code_analysis/1/sonar_analysis on 5b90ce094f1c [/var/lib/go-agent]

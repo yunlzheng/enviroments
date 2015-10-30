@@ -1,0 +1,117 @@
+03:12:21.324 [go] Job Started: 2015-10-30 03:12:21 UTC
+
+03:12:21.325 [go] Start to prepare base/1/commit/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
+03:12:21.344 [go] Start to update materials.
+
+03:12:21.348 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+03:12:21.361 STDERR: Cloning into '/var/lib/go-agent/pipelines/base'...
+03:12:22.556 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.131' to the list of known hosts.
+03:13:40.739 [GIT] Fetch and reset in working directory pipelines/base
+03:13:40.740 [GIT] Cleaning all unversioned files in working copy
+03:13:40.969 [GIT] Cleaning submodule configurations in .git/config
+03:13:41.072 [GIT] Fetching changes
+03:13:42.279 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.128' to the list of known hosts.
+03:13:44.354 [GIT] Performing git gc
+03:13:44.456 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+03:13:45.252 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+03:13:45.354 [GIT] Removing modified files in submodules
+03:13:45.770 [GIT] Cleaning all unversioned files in working copy
+03:13:46.061 [go] Done.
+
+03:13:46.081 [go] Start to build base/1/commit/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
+03:13:46.082 [go] Current job status: passed.
+
+03:13:46.082 [go] Start to execute task: <exec command="mvn" workingdir="gocd/base" >
+<arg>clean</arg>
+<arg>test</arg>
+</exec>.
+03:13:46.086 [go] setting environment variable 'GO_SERVER_URL' to value 'https://goserver:8154/go/'
+03:13:46.087 [go] setting environment variable 'GO_TRIGGER_USER' to value 'anonymous'
+03:13:46.092 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'base'
+03:13:46.093 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '1'
+03:13:46.093 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '1'
+03:13:46.094 [go] setting environment variable 'GO_STAGE_NAME' to value 'commit'
+03:13:46.094 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+03:13:46.095 [go] setting environment variable 'GO_JOB_NAME' to value 'unit-test'
+03:13:46.096 [go] setting environment variable 'GO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:13:46.096 [go] setting environment variable 'GO_TO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:13:46.097 [go] setting environment variable 'GO_FROM_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:13:48.022 [INFO] Scanning for projects...
+03:13:48.164 [INFO]                                                                         
+03:13:48.165 [INFO] ------------------------------------------------------------------------
+03:13:48.165 [INFO] Building base 15.2.0
+03:13:48.166 [INFO] ------------------------------------------------------------------------
+03:13:49.164 [INFO] 
+03:13:49.165 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ base ---
+03:13:49.410 [INFO] 
+03:13:49.411 [INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ base ---
+03:13:50.820 [INFO] Using 'UTF-8' encoding to copy filtered resources.
+03:13:50.820 [INFO] skip non existing resourceDirectory /var/lib/go-agent/pipelines/base/gocd/base/src/main/resources
+03:13:50.821 [INFO] 
+03:13:50.822 [INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ base ---
+03:13:52.715 [INFO] Compiling 45 source files to /var/lib/go-agent/pipelines/base/gocd/base/target/classes
+03:13:55.543 [INFO] /var/lib/go-agent/pipelines/base/gocd/base/src/com/thoughtworks/go/util/DirectoryScanner.java: Some input files use unchecked or unsafe operations.
+03:13:55.543 [INFO] /var/lib/go-agent/pipelines/base/gocd/base/src/com/thoughtworks/go/util/DirectoryScanner.java: Recompile with -Xlint:unchecked for details.
+03:13:55.544 [INFO] 
+03:13:55.544 [INFO] --- maven-resources-plugin:2.3:testResources (default-testResources) @ base ---
+03:13:55.556 [INFO] Using 'UTF-8' encoding to copy filtered resources.
+03:13:55.557 [INFO] skip non existing resourceDirectory /var/lib/go-agent/pipelines/base/gocd/base/src/test/resources
+03:13:55.558 [INFO] 
+03:13:55.558 [INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ base ---
+03:13:55.606 [INFO] Compiling 15 source files to /var/lib/go-agent/pipelines/base/gocd/base/target/test-classes
+03:13:56.196 [INFO] /var/lib/go-agent/pipelines/base/gocd/base/test/com/thoughtworks/go/domain/DirectoryScannerTest.java: /var/lib/go-agent/pipelines/base/gocd/base/test/com/thoughtworks/go/domain/DirectoryScannerTest.java uses unchecked or unsafe operations.
+03:13:56.196 [INFO] /var/lib/go-agent/pipelines/base/gocd/base/test/com/thoughtworks/go/domain/DirectoryScannerTest.java: Recompile with -Xlint:unchecked for details.
+03:13:56.197 [INFO] 
+03:13:56.197 [INFO] --- maven-surefire-plugin:2.16:test (default-test) @ base ---
+03:13:56.614 [INFO] Surefire report directory: /var/lib/go-agent/pipelines/base/gocd/base/target/surefire-reports
+03:13:56.740 
+03:13:56.748 -------------------------------------------------------
+03:13:56.748  T E S T S
+03:13:56.749 -------------------------------------------------------
+03:13:57.139 Running com.thoughtworks.go.domain.DirectoryScannerTest
+03:13:57.309 Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec - in com.thoughtworks.go.domain.DirectoryScannerTest
+03:13:57.365 Running com.thoughtworks.go.util.GoConstantsTest
+03:13:57.370 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.thoughtworks.go.util.GoConstantsTest
+03:13:57.374 Running com.thoughtworks.go.util.command.StringArgumentTest
+03:13:57.379 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.thoughtworks.go.util.command.StringArgumentTest
+03:13:57.385 Running com.thoughtworks.go.util.FileDigesterTest
+03:13:57.392 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.thoughtworks.go.util.FileDigesterTest
+03:13:57.408 Running com.thoughtworks.go.util.ZipUtilTest
+03:13:57.491 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in com.thoughtworks.go.util.ZipUtilTest
+03:13:57.495 Running com.thoughtworks.go.util.TriStateTest
+03:13:57.497 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.thoughtworks.go.util.TriStateTest
+03:13:57.500 Running com.thoughtworks.go.util.ListUtilTest
+03:13:57.500 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.thoughtworks.go.util.ListUtilTest
+03:13:57.504 Running com.thoughtworks.go.util.comparator.AlphaAsciiCollectionComparatorTest
+03:13:57.518 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.thoughtworks.go.util.comparator.AlphaAsciiCollectionComparatorTest
+03:13:57.525 Running com.thoughtworks.go.util.StringUtilTest
+03:13:57.536 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.thoughtworks.go.util.StringUtilTest
+03:13:57.539 Running com.thoughtworks.go.util.DateUtilsTest
+03:13:57.667 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec - in com.thoughtworks.go.util.DateUtilsTest
+03:13:57.669 Running com.thoughtworks.go.util.PairTest
+03:13:57.671 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.thoughtworks.go.util.PairTest
+03:13:57.673 Running com.thoughtworks.go.util.TempFilesTest
+03:13:57.692 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.thoughtworks.go.util.TempFilesTest
+03:13:57.694 Running com.thoughtworks.go.util.SystemUtilTest
+03:13:58.188 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.493 sec - in com.thoughtworks.go.util.SystemUtilTest
+03:13:58.190 Running com.thoughtworks.go.util.DateUtilsConcurrencyTest
+03:14:12.245 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.054 sec - in com.thoughtworks.go.util.DateUtilsConcurrencyTest
+03:14:14.354 Running com.thoughtworks.go.util.SystemTimeClockTest
+03:14:14.354 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.thoughtworks.go.util.SystemTimeClockTest
+03:14:14.526 
+03:14:14.526 Results :
+03:14:14.526 
+03:14:14.527 Tests run: 77, Failures: 0, Errors: 0, Skipped: 0
+03:14:14.527 
+03:14:14.532 [INFO] ------------------------------------------------------------------------
+03:14:14.532 [INFO] BUILD SUCCESS
+03:14:14.533 [INFO] ------------------------------------------------------------------------
+03:14:14.533 [INFO] Total time: 26.546s
+03:14:14.534 [INFO] Finished at: Fri Oct 30 03:14:14 UTC 2015
+03:14:14.681 [INFO] Final Memory: 13M/180M
+03:14:14.681 [INFO] ------------------------------------------------------------------------
+03:14:14.756 [go] Current job status: passed.
+
+03:14:14.765 [go] Start to create properties base/1/commit/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
+03:14:14.765 [go] Start to upload base/1/commit/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
+03:14:15.129 [go] Job completed base/1/commit/1/unit-test on 2e612a0de52d [/var/lib/go-agent]

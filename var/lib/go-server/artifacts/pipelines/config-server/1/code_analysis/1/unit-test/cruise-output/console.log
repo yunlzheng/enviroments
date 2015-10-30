@@ -1,0 +1,59 @@
+03:14:25.191 [go] Job Started: 2015-10-30 03:14:25 UTC
+
+03:14:25.192 [go] Start to prepare config-server/1/code_analysis/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
+03:14:25.210 [go] Start to update materials.
+
+03:14:25.210 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+03:14:25.214 STDERR: Cloning into '/var/lib/go-agent/pipelines/config-server'...
+03:17:50.933 [GIT] Fetch and reset in working directory pipelines/config-server
+03:17:50.933 [GIT] Cleaning all unversioned files in working copy
+03:17:51.247 [GIT] Cleaning submodule configurations in .git/config
+03:17:51.350 [GIT] Fetching changes
+03:18:03.273 [GIT] Performing git gc
+03:18:03.381 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+03:18:04.488 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+03:18:04.590 [GIT] Removing modified files in submodules
+03:18:04.809 [GIT] Cleaning all unversioned files in working copy
+03:18:05.118 [go] Done.
+
+03:18:05.139 [go] Start to build config-server/1/code_analysis/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
+03:18:05.140 [go] Current job status: passed.
+
+03:18:05.140 [go] Start to execute task: <exec command="mvn" workingdir="gocd/config/config-server" >
+<arg>clean test</arg>
+</exec>.
+03:18:05.141 [go] setting environment variable 'GO_SERVER_URL' to value 'https://goserver:8154/go/'
+03:18:05.154 [go] setting environment variable 'GO_TRIGGER_USER' to value 'changes'
+03:18:05.155 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'config-server'
+03:18:05.155 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '1'
+03:18:05.156 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '1'
+03:18:05.156 [go] setting environment variable 'GO_STAGE_NAME' to value 'code_analysis'
+03:18:05.157 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+03:18:05.157 [go] setting environment variable 'GO_JOB_NAME' to value 'unit-test'
+03:18:05.158 [go] setting environment variable 'GO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:18:05.158 [go] setting environment variable 'GO_TO_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:18:05.158 [go] setting environment variable 'GO_FROM_REVISION' to value 'ee3ceb8f1ff2329d572ce782582d442272655114'
+03:18:07.251 [INFO] Scanning for projects...
+03:18:07.388 [INFO]                                                                         
+03:18:07.388 [INFO] ------------------------------------------------------------------------
+03:18:07.389 [INFO] Building config-server 15.2.0
+03:18:07.389 [INFO] ------------------------------------------------------------------------
+03:18:07.391 [INFO] ------------------------------------------------------------------------
+03:18:07.391 [INFO] BUILD FAILURE
+03:18:07.392 [INFO] ------------------------------------------------------------------------
+03:18:07.393 [INFO] Total time: 0.177s
+03:18:07.396 [INFO] Finished at: Fri Oct 30 03:18:07 UTC 2015
+03:18:07.485 [INFO] Final Memory: 4M/113M
+03:18:07.485 [INFO] ------------------------------------------------------------------------
+03:18:07.488 [ERROR] Unknown lifecycle phase "clean test". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+03:18:07.488 [ERROR] 
+03:18:07.488 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+03:18:07.489 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+03:18:07.489 [ERROR] 
+03:18:07.489 [ERROR] For more information about the errors and possible solutions, please read the following articles:
+03:18:07.489 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+03:18:07.622 [go] Current job status: failed.
+
+03:18:07.632 [go] Start to create properties config-server/1/code_analysis/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
+03:18:07.633 [go] Start to upload config-server/1/code_analysis/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
+03:18:07.738 [go] Job completed config-server/1/code_analysis/1/unit-test on 2e612a0de52d [/var/lib/go-agent]

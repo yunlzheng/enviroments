@@ -1,0 +1,21 @@
+06:01:41.856 [go] Job Started: 2015-10-30 06:01:41 UTC
+
+06:01:41.856 [go] Start to prepare util/1/code_analysis/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
+06:01:41.867 [go] Start to update materials.
+
+06:01:41.867 [go] Start updating files at revision ee3ceb8f1ff2329d572ce782582d442272655114 from git@github.com:twconsultants/leanswdev.git
+06:01:41.876 STDERR: Cloning into '/var/lib/go-agent/pipelines/util'...
+06:26:32.811 [GIT] Fetch and reset in working directory pipelines/util
+06:26:32.811 [GIT] Cleaning all unversioned files in working copy
+06:26:33.125 [GIT] Cleaning submodule configurations in .git/config
+06:26:33.128 [GIT] Fetching changes
+06:26:34.743 STDERR: Warning: Permanently added the RSA host key for IP address '192.30.252.129' to the list of known hosts.
+06:26:37.585 [GIT] Performing git gc
+06:26:37.687 [GIT] Updating working copy to revision ee3ceb8f1ff2329d572ce782582d442272655114
+06:26:38.603 HEAD is now at ee3ceb8 ./bn clean时使用离线模式，避免从google.code下载更新
+06:26:38.605 [GIT] Removing modified files in submodules
+06:26:38.679 [GIT] Cleaning all unversioned files in working copy
+06:26:38.981 [go] Done.
+
+06:26:38.988 [go] Job is cancelled util/1/code_analysis/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
+06:26:39.002 [go] Job completed util/1/code_analysis/1/unit-test on 2e612a0de52d [/var/lib/go-agent]
