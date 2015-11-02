@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="75">
-  <server artifactsdir="artifacts" purgeStart="10.0" purgeUpto="20.0" agentAutoRegisterKey="123456789abcdef" commandRepositoryLocation="default" serverId="ebdd2243-53fc-4e80-a219-53696b9109fb" />
+  <server artifactsdir="artifacts" purgeStart="10.0" purgeUpto="15.0" agentAutoRegisterKey="123456789abcdef" commandRepositoryLocation="default" serverId="ebdd2243-53fc-4e80-a219-53696b9109fb">
+    <security>
+      <passwordFile path="/go/password.properties" />
+    </security>
+  </server>
   <pipelines group="GoCD">
     <pipeline name="gocd-root" isLocked="false">
       <timer>0 15 * * * ?</timer>
       <materials>
         <git url="git@github.com:twconsultants/leanswdev.git" />
-        <pipeline pipelineName="config-server" stageName="code_analysis" materialName="config-server" />
-        <pipeline pipelineName="config-api" stageName="code_analysis" materialName="config-api" />
+        <pipeline pipelineName="server" stageName="commit" materialName="server" />
+        <pipeline pipelineName="agent" stageName="commit" materialName="agent" />
       </materials>
       <stage name="code_analysis">
         <jobs>
@@ -81,40 +85,7 @@
         </jobs>
       </stage>
     </pipeline>
-    <pipeline name="config-server" template="gocd-module-build-pipline">
-      <materials>
-        <git url="git@github.com:twconsultants/leanswdev.git" />
-      </materials>
-    </pipeline>
-    <pipeline name="config-api">
-      <materials>
-        <git url="git@github.com:twconsultants/leanswdev.git" />
-      </materials>
-      <stage name="code_analysis">
-        <jobs>
-          <job name="unit-test">
-            <tasks>
-              <exec command="mvn" workingdir="gocd/config/config-api">
-                <arg>test</arg>
-                <runif status="passed" />
-              </exec>
-            </tasks>
-            <artifacts>
-              <test src="gocd/config/config-api/target" />
-            </artifacts>
-          </job>
-          <job name="sonar_analysis">
-            <tasks>
-              <exec command="echo" workingdir="gocd/config/config-api">
-                <arg>sonar</arg>
-                <runif status="passed" />
-              </exec>
-            </tasks>
-          </job>
-        </jobs>
-      </stage>
-    </pipeline>
-    <pipeline name="base">
+    <pipeline name="server">
       <materials>
         <git url="git@github.com:twconsultants/leanswdev.git" />
       </materials>
@@ -123,10 +94,12 @@
           <job name="unit-test">
             <tasks>
               <exec command="mvn" workingdir="gocd">
+                <arg>--projects</arg>
+                <arg>server</arg>
+                <arg>--also-make</arg>
                 <arg>clean</arg>
-                <arg>test</arg>
-                <arg>-pl base</arg>
-                <arg>-am</arg>
+                <arg>package</arg>
+                <arg>-DskipTests</arg>
                 <runif status="passed" />
               </exec>
             </tasks>
@@ -134,36 +107,52 @@
         </jobs>
       </stage>
     </pipeline>
-    <pipeline name="util">
+    <pipeline name="agent">
       <materials>
         <git url="git@github.com:twconsultants/leanswdev.git" />
+        <pipeline pipelineName="tfs-impl" stageName="commit" materialName="tfs-impl" />
       </materials>
-      <stage name="code_analysis">
+      <stage name="commit">
         <jobs>
           <job name="unit-test">
             <tasks>
-              <exec command="mvn" workingdir="gocd/util">
+              <fetchartifact pipeline="tfs-impl" stage="commit" job="unit-test" srcdir="gocd/tfs-impl/target" dest="gocd/tfs-impl/target">
+                <runif status="passed" />
+              </fetchartifact>
+              <exec command="mvn" workingdir="gocd">
+                <arg>--projects</arg>
+                <arg>agent</arg>
+                <arg>--also-make</arg>
                 <arg>clean</arg>
-                <arg>test</arg>
+                <arg>package</arg>
+                <arg>-DskipTests</arg>
               </exec>
             </tasks>
           </job>
         </jobs>
       </stage>
     </pipeline>
-    <pipeline name="test-utils">
+    <pipeline name="tfs-impl">
       <materials>
         <git url="git@github.com:twconsultants/leanswdev.git" />
       </materials>
-      <stage name="code_analysis">
+      <stage name="commit">
         <jobs>
           <job name="unit-test">
             <tasks>
-              <exec command="mvn" workingdir="gocd/test-utils">
+              <exec command="mvn" workingdir="gocd">
+                <arg>--projects</arg>
+                <arg>tfs-impl</arg>
+                <arg>--also-make</arg>
                 <arg>clean</arg>
-                <arg>test</arg>
+                <arg>package</arg>
+                <arg>-DskipTests</arg>
+                <runif status="passed" />
               </exec>
             </tasks>
+            <artifacts>
+              <artifact src="gocd/tfs-impl/target" dest="gocd/tfs-impl/target" />
+            </artifacts>
           </job>
         </jobs>
       </stage>
